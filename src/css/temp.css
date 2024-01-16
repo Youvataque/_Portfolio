@@ -10,12 +10,6 @@
     }
 }
 
-.mesTexts{
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--primary-text-color);
-  }
-
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);

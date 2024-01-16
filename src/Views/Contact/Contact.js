@@ -1,4 +1,4 @@
-import './Contact.css'
+import '../../css/text.css';
 
 export function Contact() {
     return <div>

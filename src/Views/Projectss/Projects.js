@@ -1,4 +1,4 @@
-import './Projects.css'
+import '../../css/text.css';
 
 export function Projects() {
     return <div>

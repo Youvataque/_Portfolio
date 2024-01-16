@@ -1,15 +1,17 @@
 import logo from './logo.svg';
-import './Accueil.css';
+import '../../css/text.css';
+import '../../css/temp.css';
+
 export function Accueil() {
     return <div>
         <img src={logo} className="App-logo" alt="logo" />
-        <p className='mesTexts'>
+        <p className='monText'>
             mon text de test taratata 
         </p>
-        <p className='mesTexts'>
+        <p className='monText'>
             mon text de test taratata 
         </p>
-        <p className='mesTexts'>
+        <p className='monText'>
             mon text de test taratata 
         </p>
      </div>
