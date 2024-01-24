@@ -73,6 +73,22 @@
 
 }
 
+.slider:after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  right: 7.5px;
+  bottom: 7.5px;
+  background-image: url('../svg/sun.svg');
+  background-size: cover;
+}
+
 input:checked + .slider::before {
   transform: translateX(43px);
+}
+input:checked + .slider::after {
+  transform: translateX(-42.5px);
+  background-image: url('../svg/moon.svg');
+
 }
