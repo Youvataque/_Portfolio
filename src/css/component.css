@@ -1,5 +1,7 @@
 /* zone NavBar */
 .navbar {
+  position: fixed;
+    right: 0;
     overflow: hidden;
     height: 40px;
     border-radius: 10px;
@@ -80,7 +82,7 @@
   height: 25px;
   right: 7.5px;
   bottom: 7.5px;
-  background-image: url('../svg/sun.svg');
+  background-image: url('../svg/moon.svg');
   background-size: cover;
 }
 
@@ -89,6 +91,6 @@ input:checked + .slider::before {
 }
 input:checked + .slider::after {
   transform: translateX(-42.5px);
-  background-image: url('../svg/moon.svg');
+  background-image: url('../svg/sun.svg');
 
 }

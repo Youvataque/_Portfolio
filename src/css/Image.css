@@ -1,0 +1,18 @@
+.App-logo {
+    position: absolute;
+    height: 190px;
+    left: 15%;
+    top: 200px;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

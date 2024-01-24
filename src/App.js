@@ -7,17 +7,18 @@ import {Route, Routes} from 'react-router-dom'
 import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
+import profilPic from './img/profilPic.jpg'
 function App() {
   return (
     <div className="App" data-theme="dark">
       <header className="App-header">
-       <div className='AppBar'>
-        <div className='Leading'>
-          <ThemeSwitcher/>
-          <h1 className='monTitre'>SEGUIN Yannis</h1>
-        </div>
-          <NavBar />
+        <div className='AppBar'>
+          <div className='Leading'>
+            <ThemeSwitcher/>
+            <img className='profilPic' src={profilPic}/>
           </div>
+          <NavBar />
+        </div>
       </header>
       <Routes>
         <Route path='/' element={<Accueil/>}/>
