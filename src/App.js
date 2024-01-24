@@ -6,13 +6,16 @@ import { About } from './Views/About/About';
 import {Route, Routes} from 'react-router-dom'
 import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
-
+import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
 function App() {
   return (
     <div className="App" data-theme="dark">
       <header className="App-header">
-       <div className='Row'>
-        <h1 className='monTitre'>SEGUIN Yannis</h1>
+       <div className='AppBar'>
+        <div className='Leading'>
+          <ThemeSwitcher/>
+          <h1 className='monTitre'>SEGUIN Yannis</h1>
+        </div>
           <NavBar />
           </div>
       </header>

@@ -7,6 +7,7 @@
     --primary-text-color:#D6E1FF;
     --secondary-text-color:#9EB1FF;
 }
+
 [data-theme="light"] {
     --background-color: #FDFDFE;
     --not-background-color: #F7F9FF;
@@ -15,4 +16,8 @@
     --border-color: #C1D0FF;
     --primary-text-color:#1F2D5C;
     --secondary-text-color:#3A5BC7;
+}
+
+*{
+    transition: all 0.3s ease-in-out;
 }

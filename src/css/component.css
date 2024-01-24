@@ -38,4 +38,41 @@
   
   }
 /* fin zone navbar */
-  
+
+/* début du ThemeSwitcher */
+.switcher{
+  position: relative;
+  display: inline;
+  width: 85px;
+  height: 40px;
+}
+.switcher input {display: none;}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--element-background-color);
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  left: 5px;
+  bottom: 5px;
+  border-radius: 30px;
+  transition: 0.4s;
+  background-color: var(--primary-text-color);
+
+}
+
+input:checked + .slider::before {
+  transform: translateX(43px);
+}

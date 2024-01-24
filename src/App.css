@@ -22,7 +22,7 @@
   color: #61dafb;
 }
 
-.Row{
+.AppBar{
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -31,8 +31,18 @@
 
 }
 
+.Leading {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+  align-items: self-end;
+  margin-left: 20px;
+  width: 600px;
+}
+
 .monTitre{
-  margin-left: 30px;
-  font-size: 40px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 22px;
   color: var(--primary-text-color);
 }
