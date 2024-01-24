@@ -92,5 +92,4 @@ input:checked + .slider::before {
 input:checked + .slider::after {
   transform: translateX(-42.5px);
   background-image: url('../svg/sun.svg');
-
 }

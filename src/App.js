@@ -7,7 +7,7 @@ import {Route, Routes} from 'react-router-dom'
 import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
-import profilPic from './img/profilPic.jpg'
+import profilPic from './img/profilPic.png'
 function App() {
   return (
     <div className="App" data-theme="dark">

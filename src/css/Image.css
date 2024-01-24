@@ -1,10 +1,30 @@
 .App-logo {
-    position: absolute;
+    display: flex;
+    margin-left: 15%;
     height: 190px;
-    left: 15%;
-    top: 200px;
-    pointer-events: none;
-    opacity: 0.3;
+    opacity: 0.3 ;
+  }
+  .homePresentationStack {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin-left: 10%;
+  }
+  .homePresentationRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .profilPicBig {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 150px;
+    margin-right: 10%;
+    border: 3px solid var(--border-color);
   }
 
   @keyframes App-logo-spin {
