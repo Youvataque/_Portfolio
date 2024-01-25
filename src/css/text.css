@@ -12,11 +12,12 @@
 }
 
 .homeHello{
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
     font-size: 30px;
-    color: var(--border-color);
+    color: var(--secondary-text-color);
 }
 
 .homeName{
@@ -26,18 +27,44 @@
     margin-left: 5%;
     flex-direction: row;
     font-size: 100px;
-    color: var(--border-color);
+    color: var(--secondary-text-color);
+}
+
+.homeName2{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    flex-direction: row;
+    font-size: 100px;
+    color: var(--secondary-text-color);
 }
 
 .homeTextPr{
     text-align: start;
-    margin-left: 10%;
     flex-direction: row;
     font-size: 45px;
     color: var(--primary-text-color);
 }
 
 .TextLength{
-    margin-left: 5%;
-    margin-right: 9%;
+    margin-left: 37px;
+
+}
+
+@media (max-width: 720px) {
+    .homeHello {
+        font-size: 15px;
+    }
+    .homeName{
+        font-size: 50px;
+        margin-left: 10%;
+    }
+    .homeName2{
+        font-size: 50px;
+        margin-left: 7%;
+    }
+    .homeTextPr{
+        font-size: 25px;
+    }
 }

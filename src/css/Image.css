@@ -6,7 +6,6 @@
   .homePresentationStack {
     position: relative;
     height: 300px;
-    margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 0;
   }
@@ -25,16 +24,52 @@
     width: 300px;
     object-fit: cover;
     border-radius: 150px;
-    margin-right: 10%;
     border: 3px solid var(--border-color);
   }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  .GlobalHome{
+    margin: auto;
+    width: 1300px;
   }
-  
+
+  @media (max-width: 1300px) {
+    .GlobalHome{
+      margin: auto;
+      width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+  .GlobalHome{
+    margin: auto;
+    width: 710px;
+  }
+  .profilPicBig {
+    height: 220px;
+    width: 220px;
+    margin-top: 40px;
+    object-fit: cover;
+    border-radius: 150px;
+    border: 3px solid var(--border-color);
+  }
+}
+
+@media (max-width: 720px) {
+  .GlobalHome{
+    margin: auto;
+    width: 380px;
+  }
+  .profilPicBig {
+    height: 130px;
+    width: 130px;
+    margin-top: 55px;
+    object-fit: cover;
+    border-radius: 150px;
+    border: 3px solid var(--border-color);
+  }
+  .homePresentationRow{
+    height: 190px;
+  }
+  .App-logo{
+    height: 120px;
+  }
+}

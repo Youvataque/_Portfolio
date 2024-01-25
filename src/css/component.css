@@ -6,6 +6,7 @@
     height: 40px;
     border-radius: 10px;
     margin-right: 30px;
+    border: 1px solid var(--border-color);
   }
   
   .navbar-nav {
@@ -39,6 +40,9 @@
     background-color: var(--element-howevered-color);
   
   }
+  @media (max-width: 720px) {
+    
+  }
 /* fin zone navbar */
 
 /* début du ThemeSwitcher */
@@ -71,7 +75,7 @@
   bottom: 5px;
   border-radius: 30px;
   transition: 0.4s;
-  background-color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
 
 }
 
