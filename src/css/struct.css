@@ -43,3 +43,28 @@
   }
 }
 /* fin accueil */
+
+/* Hamburger page */
+.HamburgerStack{
+    top: 20px;
+    right: 0px;
+    position: fixed;
+}
+
+.HamburgerStyle{
+    pointer-events: none;
+    position: absolute;
+    top: 7.5px;
+    right: 40px;
+}
+
+.HamburgerBarre{
+    pointer-events: none;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+    width: 20px;
+    height: 2px;
+    background-color: var(--secondary-text-color);
+    border-radius: 15px;
+}
+/* fin Hamburger page */

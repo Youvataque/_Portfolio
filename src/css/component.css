@@ -102,7 +102,6 @@ input:checked + .slider::after {
 /* component menu hamburger */
 
 .hamburger{
-  position: sticky;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   width: 40px;
