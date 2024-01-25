@@ -1,5 +1,4 @@
 .App-logo {
-    display: flex;
     margin-left: 15%;
     height: 190px;
     opacity: 0.3 ;
@@ -7,15 +6,18 @@
   .homePresentationStack {
     position: relative;
     height: 300px;
-    width: 500px;
     margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
   .homePresentationRow {
+    height: 270px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin-top: 120px;
+    margin-bottom: 0px;
   }
 
   .profilPicBig {

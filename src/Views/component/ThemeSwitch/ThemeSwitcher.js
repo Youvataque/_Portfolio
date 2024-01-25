@@ -1,15 +1,20 @@
 import '../../../css/theme.css'
 import '../../../css/component.css'
-
+import React, { useContext } from 'react';
+import TempContext from '../../../TempContext';
 export function ThemeSwitcher() {
+    const { temp, setTemp } = useContext(TempContext);
+
     const setDarkTheme= () => {
         document.querySelector("body").setAttribute("data-theme", "dark");
         localStorage.setItem("selectedItem", "dark");
+        setTemp("dark");
     };
 
     const setLightTheme= () => {
         document.querySelector("body").setAttribute("data-theme", "light");
         localStorage.setItem("selectedItem", "light");
+        setTemp("light");
 
     };
 
