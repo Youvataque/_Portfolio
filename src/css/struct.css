@@ -1,0 +1,45 @@
+/* Accueil */
+  .homePresentationStack {
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .homePresentationRow {
+    height: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 120px;
+    margin-bottom: 0px;
+  }
+  .GlobalHome{
+    margin: auto;
+    width: 1300px;
+  }
+
+  @media (max-width: 1300px) {
+    .GlobalHome{
+      margin: auto;
+      width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+  .GlobalHome{
+    margin: auto;
+    width: 710px;
+  }
+}
+
+@media (max-width: 720px) {
+  .GlobalHome{
+    margin: auto;
+    width: 380px;
+  }
+  .homePresentationRow{
+    height: 190px;
+  }
+}
+/* fin accueil */

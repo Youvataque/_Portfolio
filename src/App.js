@@ -1,6 +1,7 @@
 import './App.css';
 import './css/theme.css'
 import {NavBar} from './Views/component/NavBar/NavBar';
+import {Hamburger} from './Views/component/NavBar/Hamburger';
 import { Accueil } from './Views/Accueil/Accueil';
 import { About } from './Views/About/About';
 import {Route, Routes} from 'react-router-dom'
@@ -8,7 +9,7 @@ import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
 import profilPic from './img/profilPic.png'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TempContext from './TempContext';
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
             <ThemeSwitcher />
             <img className='profilPic' src={profilPic} />
           </div>
-          <NavBar />
+          <Hamburger/>
+          <NavBar/>
         </div>
       </header>
       <Routes>

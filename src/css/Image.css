@@ -1,48 +1,19 @@
+/* accueil Image*/
 .App-logo {
     margin-left: 15%;
     height: 190px;
     opacity: 0.3 ;
   }
-  .homePresentationStack {
-    position: relative;
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-  .homePresentationRow {
-    height: 270px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    margin-top: 120px;
-    margin-bottom: 0px;
-  }
-
   .profilPicBig {
+    margin-top: 50px;
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 150px;
     border: 3px solid var(--border-color);
   }
-  .GlobalHome{
-    margin: auto;
-    width: 1300px;
-  }
-
-  @media (max-width: 1300px) {
-    .GlobalHome{
-      margin: auto;
-      width: 1000px;
-    }
-}
 
 @media (max-width: 1000px) {
-  .GlobalHome{
-    margin: auto;
-    width: 710px;
-  }
   .profilPicBig {
     height: 220px;
     width: 220px;
@@ -54,10 +25,6 @@
 }
 
 @media (max-width: 720px) {
-  .GlobalHome{
-    margin: auto;
-    width: 380px;
-  }
   .profilPicBig {
     height: 130px;
     width: 130px;
@@ -66,10 +33,8 @@
     border-radius: 150px;
     border: 3px solid var(--border-color);
   }
-  .homePresentationRow{
-    height: 190px;
-  }
   .App-logo{
     height: 120px;
   }
 }
+/* fin accueil Image */

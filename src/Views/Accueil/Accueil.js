@@ -1,6 +1,7 @@
 import darkBack from '../../svg/FlutterDark.svg';
 import lightBack from '../../svg/FlutterLight.svg';
 import '../../css/text.css';
+import '../../css/struct.css';
 import '../../css/Image.css';
 import profilPicBig from '../../img/profilPicBig.png'
 import React, { useContext } from 'react';
@@ -24,7 +25,7 @@ export function Accueil() {
             <div className='TextLength'>
                 <p className='homeTextPr'>
                     <b> Junior mobile developper.</b>
-                    &nbsp;Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure.
+                    &nbsp; Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure.
                 </p>
             </div>
        </div>
