@@ -25,7 +25,7 @@ export function Hamburger() {
                     <Link className='HamburgerNavLink' to='/about' onClick={change}><p className="HamburgerPoint">3.&nbsp;</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</Link>
                 </li>
                 <li className="HamburgerNavItem">
-                    <Link className='HamburgerNavLink' to='/contact' onClick={change}><p className="HamburgerPoint">4.&nbsp;</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</Link>
+                    <Link className='HamburgerNavLink' to='/contact' ><p className="HamburgerPoint">4.&nbsp;</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</Link>
                 </li>
             </ul>
             <div className={`HamburgerStack ${open ? "open" : ""}`}>
