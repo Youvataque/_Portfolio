@@ -52,6 +52,17 @@
     width: 600px;
 }
 
+/* Hamburger part */
+.HamburgerH1{
+    margin-top: 80px;
+    color: var(--secondary-text-color);
+}
+
+.HamburgerPoint{
+    color: var(--secondary-text-color);
+}
+/* fin hamburger part*/
+
 @media (max-width: 720px) {
     .homeHello {
         font-size: 15px;
