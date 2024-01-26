@@ -1,11 +1,15 @@
 /* accueil Image*/
 .App-logo {
-    margin-left: 15%;
+    margin-left: -70px;
+    margin-top: -100px;
+    rotate: 45deg;
     height: 190px;
     opacity: 0.3 ;
   }
   .profilPicBig {
+    opacity: 0;
     margin-top: 50px;
+    margin-right: 2%;
     height: 300px;
     width: 300px;
     object-fit: cover;

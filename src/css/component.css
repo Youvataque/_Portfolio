@@ -115,6 +115,21 @@ input:checked + .slider::after {
   background-color: var(--element-howevered-color);
 }
 
+.BlurHamburgerContent{
+  position: fixed;
+  z-index: 99;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.BlurHamburgerContent.blur-active {
+  opacity: 1;
+  right: 0;
+}
+
 .HamburgerMenuRow{
   display: flex;
   flex-direction: row;
