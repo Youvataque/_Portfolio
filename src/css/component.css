@@ -274,11 +274,12 @@ input:checked + .slider::after {
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
-  text-decoration: none;
   color: var(--not-background-color);
   background-color: var(--secondary-text-color);
 }
-
+.ContactLinks a{
+  text-decoration: none;
+}
 .ContactLinks:hover {
   background-color: var(--primary-text-color);
 }
