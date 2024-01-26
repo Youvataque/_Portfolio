@@ -66,11 +66,11 @@
     width: 250px;
     height: 100vh;
     background: var(--element-background-color);
-    transition: right 0.3s ease; 
 }
 
 .menu.open {
     right: 0; /* Fait apparaître le menu */
+
 }
 
 .BlurHamburgerContent.blur-active {
@@ -104,5 +104,46 @@
     height: 2px;
     background-color: var(--secondary-text-color);
     border-radius: 15px;
+    transition: 0s;
+}
+
+.HamburgerBarreL{
+    margin-top: 10px;
+    pointer-events: none;
+    width: 20px;
+    height: 2px;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+    background-color: var(--secondary-text-color);
+    border-radius: 15px;
+}
+.HamburgerBarreR{
+    width: 20px;
+    height: 2px;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+    background-color: var(--secondary-text-color);
+    border-radius: 15px;
+
+}
+
+.HamburgerBarreL.open{
+    position: fixed;
+    z-index: 102;
+    transform: rotate(-45deg);
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+
+.HamburgerBarreR.open{
+    position: fixed;
+    z-index: 101;
+    transform: rotate(45deg);
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.HamburgerBarre.open{
+    visibility: hidden;
 }
 /* fin Hamburger page */
