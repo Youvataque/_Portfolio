@@ -6,13 +6,13 @@ export function ThemeSwitcher() {
     const { temp, setTemp } = useContext(TempContext);
 
     const setDarkTheme= () => {
-        document.querySelector("body").setAttribute("data-theme", "dark");
+        document.querySelector("html").setAttribute("data-theme", "dark");
         localStorage.setItem("selectedItem", "dark");
         setTemp("dark");
     };
 
     const setLightTheme= () => {
-        document.querySelector("body").setAttribute("data-theme", "light");
+        document.querySelector("html").setAttribute("data-theme", "light");
         localStorage.setItem("selectedItem", "light");
         setTemp("light");
 
@@ -35,7 +35,7 @@ export function ThemeSwitcher() {
     };
 
     return <label className='switcher'>
-        <input className='switch' type="checkbox" onChange={toggle} defaultChecked={selectedItem == "dark"}></input>
+        <input className='switch' type="checkbox" onChange={toggle} defaultChecked={selectedItem=="dark"}></input>
         <span className='slider'></span>
     </label>
 }
