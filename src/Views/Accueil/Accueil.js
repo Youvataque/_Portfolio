@@ -1,14 +1,17 @@
 import darkBack from '../../svg/FlutterDark.svg';
 import lightBack from '../../svg/FlutterLight.svg';
+import profilPicBig from '../../img/profilPicBig.png'
 import '../../css/text.css';
 import '../../css/struct.css';
 import '../../css/Image.css';
-import profilPicBig from '../../img/profilPicBig.png'
 import React, { useContext } from 'react';
 import TempContext from '../../TempContext';
 import {motion} from 'framer-motion';
+import { ContactLinks } from '../component/ContactLinks/ContactLinks';
 export function Accueil() {
     const { temp } = useContext(TempContext);
+    const titles = ["Linkedin", "Github", "Youtube", "Twitter"];
+    const links = ["https://www.linkedin.com/in/yannis-seguin-540432161/", "https://github.com/Youvataque", "https://www.youtube.com/channel/UCQUgpvsakyzaLKko-a4lfBA", "https://twitter.com/SEGUIN_Yannis"]
     return <div>
        <div className='GlobalHome'>
             <div className='homePresentationRow'>
@@ -28,6 +31,7 @@ export function Accueil() {
                     &nbsp;Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure.
                 </p>
             </motion.div>
+        <ContactLinks titles={titles} links={links}/>
         </div>
     </div>
 }
