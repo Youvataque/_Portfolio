@@ -107,7 +107,6 @@ input:checked + .slider::after {
   width: 40px;
   height: 40px;
   border-radius: 15px;
-  margin-right: 30px;
   border: 1px solid var(--border-color);
   background-color: var(--element-background-color);
 }
