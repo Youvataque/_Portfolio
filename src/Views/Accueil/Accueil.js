@@ -10,6 +10,7 @@ import {motion} from 'framer-motion';
 import { ContactLinks } from '../component/ContactLinks/ContactLinks';
 import { ProjectsCard } from '../component/ProjectsCard/ProjectsCard';
 import { SkillsGenerator } from '../component/SkillsGenerator/SkillsGenerator';
+import { Gap } from '../component/Gap';
 export function Accueil() {
     const { temp } = useContext(TempContext);
     // contacts 
@@ -53,22 +54,13 @@ export function Accueil() {
                 </p>
             </motion.div>
             <ContactLinks titles={socialContact.titles} links={socialContact.links}/>
-            <div className='Space'/>
-            <div className='Space'/>
-            <div className='Space'/>
-            <div className='Space'/>
-            <div className='Space'/>
+            <Gap size={140}/>
         </div>
         <h1 className='HomeSecTitle'>Importants Projects</h1>
         <ProjectsCard texts={importantProj.texts} titles={importantProj.titles} links={importantProj.links} skills={importantProj.skills} marge={'HomeCards'}/>
-        <div className='Space'/>
-        <div className='Space'/>
-        <div className='Space'/>
-        <div className='Space'/>
-        <div className='Space'/>
+        <Gap size={140}/>
         <h1 className='HomeSecTitle'>My Personal Skills</h1>
         <SkillsGenerator/>
-        <div className='Space'/>
-        <div className='Space'/>
+        <Gap size={90}/>
     </div>
 }

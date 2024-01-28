@@ -1,7 +1,7 @@
 import '../../css/text.css';
 import '../../css/struct.css';
 import { ProjectsCard } from '../component/ProjectsCard/ProjectsCard';
-
+import { Gap } from '../component/Gap';
 export function Projects() {
     // projets mobile
     const mobile = {
@@ -28,13 +28,11 @@ export function Projects() {
         ]
     }
     return <div>
-        <h1 className='ProjectsSec'>Mobile Projetcs :</h1>
+        <h1 className='ProjectsSec'>Mobile Projects :</h1>
         <ProjectsCard texts={mobile.texts} titles={mobile.titles} links={mobile.links} skills={mobile.skills} marge='ProjectsCards'/>
-        <div className='Space'></div>
-        <div className='Space'></div>
-        <h1 className='ProjectsSec'>Web Projetcs :</h1>
+        <Gap size={90}/>
+        <h1 className='ProjectsSec'>Web Projects :</h1>
         <ProjectsCard texts={web.texts} titles={web.titles} links={web.links} skills={web.skills} marge='ProjectsCards'/>
-        <div className='Space'></div>
-        <div className='Space'></div>
+        <Gap size={90}/>
     </div>
 }

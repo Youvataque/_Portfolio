@@ -385,9 +385,10 @@ input:checked + .slider::after {
   justify-content: center;
   margin-left: 3%;
 }
+
 .SkillsSecBody{
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 170px;
+  margin-right: 170px;
 }
 
 .SkillsSec{
@@ -408,6 +409,13 @@ input:checked + .slider::after {
 @media (max-width: 1600px) {
   .ProjectsCards{
     margin-left: 8%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .SkillsSecBody{
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 

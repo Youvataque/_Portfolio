@@ -33,6 +33,17 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
+      <footer>
+        <div className='Space'/>
+        <div className='Space'/>
+        <p className='CopyrightText'>
+          Designed and built by Yannis Seguin
+        </p>
+        <p className='CopyrightText'>
+          ©Copyright 2024 - Yannis Seguin
+        </p>
+        <div className='Space'/>
+      </footer>
     </div>
   </TempContext.Provider>
 );

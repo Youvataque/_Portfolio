@@ -53,6 +53,10 @@
   border: 1px solid var(--border-color);
 }
 
+.CopyrightText{
+  color: var(--primary-text-color);
+  font-size: 16px;
+}
 html{
   background-color: var(--secondary-text-color);
 }
