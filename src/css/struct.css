@@ -17,8 +17,17 @@
   }
   .GlobalHome{
     margin: auto;
-    width: 1300px;
+    width: 1500px;
   }
+
+  .HomeCards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* projects */
 
   @media (max-width: 1300px) {
     .GlobalHome{
@@ -43,7 +52,6 @@
     height: 190px;
   }
 }
-/* fin accueil */
 
 /* Hamburger page */
 

@@ -8,8 +8,8 @@ import React, { useContext } from 'react';
 import TempContext from '../../TempContext';
 import {motion} from 'framer-motion';
 import { ContactLinks } from '../component/ContactLinks/ContactLinks';
-import { Projects } from '../Projectss/Projects';
 import { ProjectsCard } from '../component/ProjectsCard/ProjectsCard';
+import { SkillsGenerator } from '../component/SkillsGenerator/SkillsGenerator';
 export function Accueil() {
     const { temp } = useContext(TempContext);
     // contacts 
@@ -60,7 +60,13 @@ export function Accueil() {
             <div className='Space'/>
         </div>
         <h1 className='HomeSecTitle'>Importants Projects</h1>
-        <ProjectsCard texts={importantProj.texts} titles={importantProj.titles} links={importantProj.links} skills={importantProj.skills}/>
+        <ProjectsCard texts={importantProj.texts} titles={importantProj.titles} links={importantProj.links} skills={importantProj.skills} marge={'HomeCards'}/>
         <div className='Space'/>
+        <div className='Space'/>
+        <div className='Space'/>
+        <div className='Space'/>
+        <div className='Space'/>
+        <h1 className='HomeSecTitle'>My Personal Skills</h1>
+        <SkillsGenerator/>
     </div>
 }

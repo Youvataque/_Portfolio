@@ -1,8 +1,8 @@
 import {SkillsLinks} from '../SkillsLinks/SkillsLinks'
 
-export function ProjectsCard({texts, titles, links, skills}) {
+export function ProjectsCard({texts, titles, links, skills,  marge}) {
     return <div>
-        <ul className="ProjectsCard">
+        <ul className={marge}>
             {titles.map((title, index) => (
                 <a target="_blank" href={links[index]}  key={index} className="Card">
                     <div>

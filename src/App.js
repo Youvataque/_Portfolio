@@ -4,7 +4,7 @@ import {NavBar} from './Views/component/NavBar/NavBar';
 import {Hamburger} from './Views/component/NavBar/Hamburger';
 import { Accueil } from './Views/Accueil/Accueil';
 import { About } from './Views/About/About';
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom';
 import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';

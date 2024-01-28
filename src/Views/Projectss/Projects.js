@@ -1,4 +1,5 @@
 import '../../css/text.css';
+import '../../css/struct.css';
 import { ProjectsCard } from '../component/ProjectsCard/ProjectsCard';
 
 export function Projects() {
@@ -28,11 +29,11 @@ export function Projects() {
     }
     return <div>
         <h1 className='ProjectsSec'>Mobile Projetcs :</h1>
-        <ProjectsCard texts={mobile.texts} titles={mobile.titles} links={mobile.links} skills={mobile.skills}/>
+        <ProjectsCard texts={mobile.texts} titles={mobile.titles} links={mobile.links} skills={mobile.skills} marge='ProjectsCards'/>
         <div className='Space'></div>
         <div className='Space'></div>
         <h1 className='ProjectsSec'>Web Projetcs :</h1>
-        <ProjectsCard texts={web.texts} titles={web.titles} links={web.links} skills={web.skills}/>
+        <ProjectsCard texts={web.texts} titles={web.titles} links={web.links} skills={web.skills} marge='ProjectsCards'/>
         <div className='Space'></div>
         <div className='Space'></div>
     </div>
