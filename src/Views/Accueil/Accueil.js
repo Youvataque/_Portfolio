@@ -12,8 +12,8 @@ import { Projects } from '../Projectss/Projects';
 import { ProjectsCard } from '../component/ProjectsCard/ProjectsCard';
 export function Accueil() {
     const { temp } = useContext(TempContext);
-    // Compétences 
-    const skills = {
+    // contacts 
+    const socialContact = {
         titles : ["Linkedin", "Github", "Youtube", "Twitter"],
         links : ["https://www.linkedin.com/in/yannis-seguin-540432161/", "https://github.com/Youvataque", "https://www.youtube.com/channel/UCQUgpvsakyzaLKko-a4lfBA", "https://twitter.com/SEGUIN_Yannis"]
     }
@@ -52,7 +52,7 @@ export function Accueil() {
                     &nbsp;Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure.
                 </p>
             </motion.div>
-            <ContactLinks titles={skills.titles} links={skills.links}/>
+            <ContactLinks titles={socialContact.titles} links={socialContact.links}/>
             <div className='Space'/>
             <div className='Space'/>
             <div className='Space'/>
