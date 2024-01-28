@@ -48,9 +48,14 @@
 }
 
 .TextLength{
+    margin-top: 50px;
     opacity: 0;
     margin-left: 40px;
     width: 600px;
+}
+
+.HomeSecTitle{
+    color: var(--primary-text-color);
 }
 
 /* Hamburger part */
@@ -64,8 +69,15 @@
 }
 /* fin hamburger part*/
 
+/* Projects part */
+.ProjectsSec{
+    color: var(--primary-text-color);
+    margin-left: 18%;
+    text-align: start;
+}
+/* fin projetcs part */
 @media (max-width: 720px) {
-    .homeHello {
+    .homeHello{
         font-size: 15px;
     }
     .homeName{
@@ -82,5 +94,11 @@
     .TextLength{
         margin-left: 25px;
         width: 300px;
+    }
+}
+
+@media (max-width : 1600px) {
+    .ProjectsSec{
+        margin-left: 10%;
     }
 }
