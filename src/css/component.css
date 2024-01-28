@@ -383,19 +383,30 @@ input:checked + .slider::after {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 3%;
+}
+.SkillsSecBody{
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .SkillsSec{
   color: var(--secondary-text-color);
-  width: 200px;
-  margin-left: 120px;
-  margin-right: 120px;
+  text-align: center;
+}
+
+.Skill{
+  color: var(--primary-text-color);
+  text-align: start;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 3%;
 }
 
 /* ////////////////////////////////////////////////// */
 /* // zone du responsive */ 
 @media (max-width: 1600px) {
-  .ProjectsCard{
+  .ProjectsCards{
     margin-left: 8%;
   }
 }
@@ -421,7 +432,7 @@ input:checked + .slider::after {
     margin-left: -23px;
   }
 
-  .ProjectsCard{
+  .ProjectsCards{
     margin-left: 1%;
   }
 

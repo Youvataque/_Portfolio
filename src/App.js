@@ -9,7 +9,7 @@ import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
 import profilPic from './img/profilPic.png'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TempContext from './TempContext';
 
 function App() {

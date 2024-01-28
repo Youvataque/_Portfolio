@@ -68,5 +68,7 @@ export function Accueil() {
         <div className='Space'/>
         <h1 className='HomeSecTitle'>My Personal Skills</h1>
         <SkillsGenerator/>
+        <div className='Space'/>
+        <div className='Space'/>
     </div>
 }

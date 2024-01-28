@@ -17,7 +17,7 @@
   }
   .GlobalHome{
     margin: auto;
-    width: 1500px;
+    width: 1300px;
   }
 
   .HomeCards{
@@ -25,6 +25,7 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-right: 3%;
   }
 
   /* projects */
