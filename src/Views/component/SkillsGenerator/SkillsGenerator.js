@@ -1,5 +1,6 @@
 import TempContext from '../../../TempContext';
 import React, { useContext } from 'react';
+import {delay, motion} from 'framer-motion';
 // dark
 import figmaD from '../../../svg/skills/Dark/figmaD.svg';
 import pixelMatorD from '../../../svg/skills/Dark/pixelmatorD.svg';
@@ -33,10 +34,19 @@ export function SkillsGenerator({}) {
             <div key={section} className="SkillsSecBody">
                 <h2 className="SkillsSec">{section}</h2>
                 {mySkills[section][0].map((skill, index) =>(
-                    <div className='SkillsPair'>
-                        <img  className='SkillsImg' key={index} src={mySkills[section][1][index]}/>
-                        <p className="Skill">{skill}</p>
-                    </div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                        visible: { opacity: 1 },
+                        hidden: { opacity: 0 }
+                        }}
+                        transition={{delay : (index + 1) / 6}}
+                        className='SkillsPair'>
+                            <img  className='SkillsImg' key={index} src={mySkills[section][1][index]}/>
+                            <p className="Skill">{skill}</p>
+                    </motion.div>
                 ))}
             </div>
         ))}

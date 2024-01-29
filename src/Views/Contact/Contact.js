@@ -15,6 +15,7 @@ export function Contact() {
             <ContactUs/>
             <div className='ContactColumn'>
                 <h2 className='ContactTitle'>Or Contact me on my socials networks ;)</h2>
+                <Gap size={-25}/>
                 <p className='ContactText'>I'm not a big social media user, but I will do my best to respond to you as quickly as possible. I can also be reached at <b>06 28 26 45 61</b></p>
                 <div className='CenterContactL'>
                     <ContactLinks titles={socialContact.titles} links={socialContact.links}/>

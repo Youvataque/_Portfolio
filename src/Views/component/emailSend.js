@@ -74,7 +74,7 @@ export const ContactUs = () => {
             <textarea className='SendEmailTextArea' name="message" value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
         <div className='SendEmailEnd'>
-            <button className='SendEmailButton' type="submit" onClick={updateError}>Send</button>
+            <button className='SendEmailButton' type="submit" onClick={updateError}>Send Message</button>
             <p className='ErrorText'>{errorText}</p>
         </div>
     </form>

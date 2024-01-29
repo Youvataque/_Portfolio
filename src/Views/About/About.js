@@ -20,7 +20,16 @@ export function About() {
                 </p>
             </div>
                 </div>
-                <img className='profilPicBigAbout' src={profilPicBig}/>
+                <motion.img 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={{
+                        visible: { opacity: 1, x : [2000, 0]},
+                        hidden: { opacity: 0 }
+                    }}
+                    transition={{delay : 0.1}}
+                    className='profilPicBigAbout' src={profilPicBig}/>
             </div>
             
             <Gap size={140}/>
