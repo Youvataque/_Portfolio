@@ -47,7 +47,7 @@
     color: var(--primary-text-color);
 }
 
-.TextLength{
+.HomeTextLength{
     margin-top: 50px;
     opacity: 0;
     margin-left: 40px;
@@ -76,6 +76,23 @@
     text-align: start;
 }
 /* fin projetcs part */
+
+/* About  */
+.AboutTextLength{
+    margin-top: 0px;
+    width: 900px;
+}
+/* fin about */ 
+@media (max-width: 1300px) {
+  }
+
+@media (max-width: 1000px) {
+    .AboutTextLength{
+        margin-top: 0px;
+        width: 730px;
+    }
+  }
+
 @media (max-width: 720px) {
     .homeHello{
         font-size: 15px;
@@ -91,9 +108,14 @@
     .homeTextPr{
         font-size: 18.5px;
     }
-    .TextLength{
+    .HomeTextLength{
         margin-left: 25px;
         width: 300px;
+    }
+
+    .AboutTextLength{
+        margin-top: 0px;
+        width: 470px;
     }
 }
 

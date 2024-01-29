@@ -36,6 +36,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
+      <Gap size={120}/>
       <footer>
         <p className='CopyrightText'>
           Designed and built by Yannis Seguin

@@ -28,19 +28,47 @@
     margin-right: 3%;
   }
 
-  /* projects */
+/* About */
+.GlobalAbout{
+  margin: auto;
+  width: 1300px;
+}
 
-  @media (max-width: 1300px) {
-    .GlobalHome{
-      margin: auto;
-      width: 1000px;
-    }
+.AboutPresentationRow{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.AboutName{
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 80px;
+  margin: 0;
+  text-align: start;
+}
+/* Responsive */
+@media (max-width: 1300px) {
+  .GlobalHome{
+    margin: auto;
+    width: 1000px;
+  }
+
+  .GlobalAbout{
+    margin: auto;
+    width: 900px;
+  }
 }
 
 @media (max-width: 1000px) {
   .GlobalHome{
     margin: auto;
     width: 710px;
+  }
+  .GlobalAbout{
+    margin: auto;
+    width: 730px;
   }
 }
 
@@ -49,11 +77,12 @@
     margin: auto;
     width: 380px;
   }
+  .GlobalAbout{
+    margin: auto;
+    width: 460px;
+  }
   .homePresentationRow{
     height: 190px;
   }
 }
 
-/* Hamburger page */
-
-/* fin Hamburger page */

@@ -16,11 +16,40 @@
     border: 3px solid var(--border-color);
   }
 
+  .profilPicBigAbout {
+    margin-bottom: 110px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 150px;
+    border: 3px solid var(--border-color);
+  }
+
+@media (max-width: 1300px) {
+    .profilPicBigAbout {
+      position: absolute;
+      top: 200px;
+      right: 15%;
+      height: 220px;
+      width: 220px;
+      object-fit: cover;
+      border-radius: 150px;
+      border: 3px solid var(--border-color);
+    }
+  }
+
 @media (max-width: 1000px) {
   .profilPicBig {
     height: 220px;
     width: 220px;
     margin-top: 40px;
+  }
+  .profilPicBigAbout {
+    position: absolute;
+    top: 200px;
+    right: 10%;
+    height: 220px;
+    width: 220px;
     object-fit: cover;
     border-radius: 150px;
     border: 3px solid var(--border-color);
@@ -36,8 +65,31 @@
     border-radius: 150px;
     border: 3px solid var(--border-color);
   }
+  .profilPicBigAbout {
+    position: absolute;
+    top: 260px;
+    right: 10%;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 150px;
+    border: 3px solid var(--border-color);
+  }
   .App-logo{
     height: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profilPicBigAbout {
+    position: absolute;
+    top: 260px;
+    right: 5%;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 150px;
+    border: 3px solid var(--border-color);
   }
 }
 /* fin accueil Image */
