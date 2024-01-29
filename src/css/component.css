@@ -387,8 +387,8 @@ input:checked + .slider::after {
 }
 
 .SkillsSecBody{
-  margin-left: 170px;
-  margin-right: 170px;
+  margin-left: 160px;
+  margin-right: 160px;
 }
 
 .SkillsSec{
@@ -397,11 +397,29 @@ input:checked + .slider::after {
 }
 
 .Skill{
+  white-space: none;
   color: var(--primary-text-color);
   text-align: start;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 3%;
+  margin-left: 15px;
+}
+
+.SkillsImg{
+  height: 30px;
+  width: 30px;
+}
+
+.SkillsPair:hover > .SkillsImg{
+  height: 32px;
+  width: 32px;
+}
+
+.SkillsPair{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
 }
 
 /* ////////////////////////////////////////////////// */
@@ -414,8 +432,8 @@ input:checked + .slider::after {
 
 @media (max-width: 1000px) {
   .SkillsSecBody{
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
 }
 
@@ -446,5 +464,9 @@ input:checked + .slider::after {
 
   .ContactLinksBody{
     width: 400px;
+  }
+  .SkillsSecBody{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
