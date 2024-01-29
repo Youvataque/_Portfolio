@@ -96,6 +96,11 @@
 
 }
 /* fin Contact */
+@media (max-width : 1600px) {
+    .ProjectsSec{
+        margin-left: 10%;
+    }
+}
 @media (max-width: 1300px) {
   }
 
@@ -119,7 +124,7 @@
         margin-left: 7%;
     }
     .homeTextPr{
-        font-size: 18.5px;
+        font-size: 15px;
     }
     .HomeTextLength{
         margin-left: 25px;
@@ -128,12 +133,15 @@
 
     .AboutTextLength{
         margin-top: 0px;
-        width: 470px;
+        width: 420px;
+    }
+    .ContactText{
+        width: 320px;
     }
 }
 
-@media (max-width : 1600px) {
-    .ProjectsSec{
-        margin-left: 10%;
+@media (max-width : 500px) {
+    .AboutTextLength{
+        width: 365px;
     }
 }

@@ -1,8 +1,9 @@
 import {SkillsLinks} from '../SkillsLinks/SkillsLinks';
 import {motion} from 'framer-motion';
+import { Gap } from '../Gap';
 export function ProjectsCard({texts, titles, links, skills,  marge}) {
     return <div>
-        <ul className={marge}>
+        <div className={marge}>
             {titles.map((title, index) => (
                 <motion.a
                     initial="hidden"
@@ -19,9 +20,10 @@ export function ProjectsCard({texts, titles, links, skills,  marge}) {
                             <p className="ProjetcsCardText">{texts[index]}</p>
                             <div className='Space'/>
                             <SkillsLinks className="CardSkills" links={skills[index][1]} titles={skills[index][0]}/>
+                            <Gap size={10}/>
                         </div>
                 </motion.a>
             ))}
-        </ul>
+        </div>
     </div>
 }

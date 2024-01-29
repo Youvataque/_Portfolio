@@ -67,7 +67,7 @@
   }
   .profilPicBigAbout {
     position: absolute;
-    top: 260px;
+    top: 170px;
     right: 10%;
     height: 130px;
     width: 130px;
@@ -83,7 +83,7 @@
 @media (max-width: 500px) {
   .profilPicBigAbout {
     position: absolute;
-    top: 260px;
+    top: 170px;
     right: 5%;
     height: 130px;
     width: 130px;
