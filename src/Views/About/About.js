@@ -16,7 +16,7 @@ export function About() {
                     <div className='AboutTextLength'>
                 <p className='homeTextPr'>
                     <b> Junior mobile developper.</b>
-                    &nbsp;I have been passionate about programming for years and started with Python in 2021. I programmed small viruses for 2 years,<br/> then switched to Swift in 2023 and to Flutter the same year. I particularly enjoyed this aspect of development, especially with the development of 'My Manager' and 'Montpellier Transport'.<br/> Today, I continue with mobile development while also learning React.
+                    &nbsp;I have been passionate about programming for years and started with Python in 2021. I programmed small viruses for 2 years,<br/> then switched to Swift in 2023 and to Flutter the same year. I particularly enjoyed this aspect of development, especially with the development of "Mon Gestionnaire" and "Montpellier Transport".<br/> Today, I continue with mobile development while also learning React for web.
                 </p>
             </div>
                 </div>

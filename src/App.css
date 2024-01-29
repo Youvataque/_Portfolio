@@ -57,6 +57,10 @@
   color: var(--primary-text-color);
   font-size: 16px;
 }
+
+.Footer{
+  height: 90px;
+}
 html{
   background-color: var(--secondary-text-color);
 }

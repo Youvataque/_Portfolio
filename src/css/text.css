@@ -83,6 +83,19 @@
     width: 900px;
 }
 /* fin about */ 
+
+/* Contact */
+.ContactTitle{
+    color: var(--secondary-text-color);
+}
+
+.ContactText{
+    color: var(--primary-text-color);
+    font-size: 20px;
+    width: 500px;
+
+}
+/* fin Contact */
 @media (max-width: 1300px) {
   }
 

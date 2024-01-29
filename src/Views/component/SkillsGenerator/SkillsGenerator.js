@@ -35,7 +35,7 @@ export function SkillsGenerator({}) {
                 {mySkills[section][0].map((skill, index) =>(
                     <div className='SkillsPair'>
                         <img  className='SkillsImg' key={index} src={mySkills[section][1][index]}/>
-                        <p key={index} className="Skill">{skill}</p>
+                        <p className="Skill">{skill}</p>
                     </div>
                 ))}
             </div>

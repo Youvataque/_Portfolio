@@ -420,13 +420,157 @@ input:checked + .slider::after {
 }
 
 /* ////////////////////////////////////////////////// */
+/* // zone du SendEmail */ 
+.SendEmailBody{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 450px;
+  border: 1px solid var(--border-color);
+  background-color: var(--not-background-color);
+  border-radius: 15px;
+}
+
+.SendEmailPair{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.SendEmailPairA{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: auto;
+}
+
+.SendEmailTitle{
+  color: var(--primary-text-color);
+  margin-left: 7px;
+}
+
+.SendEmailTitleA{
+  color: var(--primary-text-color);
+  margin-left: 6%;
+}
+
+.SendEmailInput{
+  height: 40px;
+  width: 240px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  color: var(--primary-text-color);
+  text-indent: 5px;
+  transition: background-color 0.3s ease-in-out, 
+              border-radius 0.3s ease-in-out, 
+              color 0.3s ease-in-out,
+              height 0.3s ease-in-out, /* Si vous souhaitez également animer la hauteur */
+              width 0.3s ease-in-out;
+}
+
+.SendEmailInput:focus{
+  border: none;
+  outline: 2px solid var(--secondary-text-color);
+}
+
+.SendEmailTextArea{
+  height: 130px;
+  margin: auto;
+  width: 540px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  color: var(--primary-text-color);
+  text-indent: 5px;
+  resize: none;
+  transition: background-color 0.3s ease-in-out, 
+              border-radius 0.3s ease-in-out, 
+              color 0.3s ease-in-out,
+              height 0.3s ease-in-out,
+              width 0.3s ease-in-out;
+}
+
+.SendEmailTextArea:focus{
+  border: none;
+  outline: 2px solid var(--secondary-text-color);
+}
+.SendEmailFormTitle{
+  color: var(--secondary-text-color);
+  align-self: start;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.Divider{
+  border-bottom: 1px solid var(--border-color);
+  width: 540px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.SendEmailRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: Center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.SendSpace{
+  width: 90px;
+}
+.SendEmailButton{
+  width: 140px;
+  height: 45px;
+  margin-left: 4.5%;
+  border: 1px solid var(--border-color);
+  background-color: var(--element-background-color);
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  border-radius: 10px;
+}
+
+.SendEmailButton:hover{
+  background-color: var(--element-howevered-color);
+}
+
+.SendEmailEnd{
+  display: flex;
+}
+
+.ErrorText{
+  margin-left: 20px;
+  color: var(--primary-text-color);
+}
+
+/* ////////////////////////////////////////////////// */
 /* // zone du responsive */ 
 @media (max-width: 1600px) {
   .ProjectsCards{
     margin-left: 8%;
   }
 }
-
+@media (max-width: 1200px) {
+  .SendEmailBody{
+    width: 500px;
+    margin-left: 30px;
+  }
+  .SendEmailInput{
+    width: 200px;
+  }
+  .SendEmailTextArea{
+    width: 435px;
+  }
+  .Divider{
+    width: 405px;
+  }
+  .SendEmailButton{
+    margin-left: 30px;
+  }
+}
 @media (max-width: 1000px) {
   .SkillsSecBody{
     margin-left: 90px;
@@ -435,6 +579,22 @@ input:checked + .slider::after {
 }
 
 @media (max-width: 720px) {
+  .SendEmailBody{
+    width: 450px;
+    margin-left: 20px;
+  }
+  .SendEmailInput{
+    width: 180px;
+  }
+  .SendEmailTextArea{
+    width: 385px;
+  }
+  .Divider{
+    width: 405px;
+  }
+  .SendEmailButton{
+    margin-left: 30px;
+  }
   .navbar-nav{
     opacity: 0; 
   }
@@ -490,4 +650,6 @@ input:checked + .slider::after {
     height: 27px;
     width: 27px;
   }
+
+
 }

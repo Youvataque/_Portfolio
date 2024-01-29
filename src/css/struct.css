@@ -48,6 +48,28 @@
   margin: 0;
   text-align: start;
 }
+
+/* Contact Page */
+.ContactRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.ContactColumn{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.CenterContactL{
+  margin-right: 4%;
+}
+/* fin Contact page */
+
 /* Responsive */
 @media (max-width: 1300px) {
   .GlobalHome{
@@ -59,6 +81,10 @@
     margin: auto;
     width: 900px;
   }
+
+  .ContactRow{
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -69,6 +95,10 @@
   .GlobalAbout{
     margin: auto;
     width: 730px;
+  }
+  .ContactRow{
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -83,6 +113,9 @@
   }
   .homePresentationRow{
     height: 190px;
+  }
+  .ContactColumn{
+    width: 500px;
   }
 }
 
