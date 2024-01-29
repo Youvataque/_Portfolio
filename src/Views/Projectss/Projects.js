@@ -13,9 +13,9 @@ export function Projects() {
         ],
         links : ["https://github.com/Youvataque/gestionnaire-interventions" , "https://www.tam-voyages.com/index.asp", "https://github.com/Youvataque/Coockleen-Flutter"],
         skills : [
+            [["Flutter", "Firebase", "Github", "Figma", "PixelMator"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com", , "https://www.figma.com/fr/", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]],
             [["Flutter", "Firebase", "Github"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com"]],
-            [["Flutter", "Firebase", "Github"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com"]],
-            [["Flutter", "Firebase", "Github"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com"]]
+            [["Flutter", "Firebase", "Github", "PixelMator"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]],
         ]
     }
     // projets web
@@ -24,7 +24,7 @@ export function Projects() {
         texts : ["The portfolio is an essential requirement for every developer. Eager to showcase my skills and achievements, here is mine. It also serves as my first project in React !"],
         links : ["https://github.com/Youvataque/_Portfolio"],
         skills : [
-            [["React", "Github"], ["https://fr.legacy.reactjs.org/", "https://github.com"]]
+            [["React", "Github", "PixelMator"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]]
         ]
     }
     return <div>

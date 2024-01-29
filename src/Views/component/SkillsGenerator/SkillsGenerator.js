@@ -23,9 +23,9 @@ export function SkillsGenerator({}) {
     const {temp} = useContext(TempContext);
 
     const mySkills = {
-        Design : [["Figma", "Pixel Mator"],  temp == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
-        Front : [["Flutter", "SwiftUI", "React"], temp == 'dark'? [flutterD, swiftD, reactD] : [flutterL, swiftL, reactL]],
-        DataBase : [["Firebase", "Oracle sql"], temp == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
+        'Designing' : [["Figma", "Pixel Mator"],  temp == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
+        'Front-end' : [["Flutter", "SwiftUI", "React"], temp == 'dark'? [flutterD, swiftD, reactD] : [flutterL, swiftL, reactL]],
+        'DataBase' : [["Firebase", "Oracle sql"], temp == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
 
     }
     return <div className="SkillsGenBody">

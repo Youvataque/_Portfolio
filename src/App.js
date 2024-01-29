@@ -1,5 +1,8 @@
 import './App.css';
 import './css/theme.css'
+
+import profilPic from './img/profilPic.png'
+
 import {NavBar} from './Views/component/NavBar/NavBar';
 import {Hamburger} from './Views/component/NavBar/Hamburger';
 import { Accueil } from './Views/Accueil/Accueil';
@@ -8,7 +11,7 @@ import {Route, Routes} from 'react-router-dom';
 import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
-import profilPic from './img/profilPic.png'
+import { Gap } from './Views/component/Gap';
 import React, { useState } from 'react';
 import TempContext from './TempContext';
 
@@ -34,15 +37,13 @@ function App() {
         <Route path='/projects' element={<Projects />} />
       </Routes>
       <footer>
-        <div className='Space'/>
-        <div className='Space'/>
         <p className='CopyrightText'>
           Designed and built by Yannis Seguin
         </p>
         <p className='CopyrightText'>
           ©Copyright 2024 - Yannis Seguin
         </p>
-        <div className='Space'/>
+        <Gap size={20}/>
       </footer>
     </div>
   </TempContext.Provider>
