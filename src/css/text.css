@@ -82,6 +82,12 @@
     margin-top: 0px;
     width: 900px;
 }
+.AboutTextPr{
+    text-align: start;
+    flex-direction: row;
+    font-size: 25px;
+    color: var(--primary-text-color);
+}
 /* fin about */ 
 
 /* Contact */
@@ -124,6 +130,10 @@
         margin-left: 7%;
     }
     .homeTextPr{
+        margin-top: -100px;
+        font-size: 15px;
+    }
+    .AboutTextPr{
         font-size: 15px;
     }
     .HomeTextLength{

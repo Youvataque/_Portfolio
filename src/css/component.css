@@ -260,9 +260,8 @@ input:checked + .slider::after {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: -6px;
   height: 70px;
-  width: initial;
+  margin-left: 33px;
 }
 
 .ContactLinks{
@@ -612,7 +611,7 @@ input:checked + .slider::after {
   }
   
   .ContactLinksBody{
-    margin-left: -23px;
+    margin-left: 7px;
   }
 
   .ProjectsCards{

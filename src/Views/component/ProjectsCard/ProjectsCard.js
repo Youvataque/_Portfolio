@@ -20,7 +20,7 @@ export function ProjectsCard({texts, titles, links, skills,  marge}) {
                             <p className="ProjetcsCardText">{texts[index]}</p>
                             <div className='Space'/>
                             <SkillsLinks className="CardSkills" links={skills[index][1]} titles={skills[index][0]}/>
-                            <Gap size={10}/>
+                            <Gap size={20}/>
                         </div>
                 </motion.a>
             ))}
