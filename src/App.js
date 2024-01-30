@@ -8,16 +8,21 @@ import {Hamburger} from './Views/component/NavBar/Hamburger';
 import { Accueil } from './Views/Accueil/Accueil';
 import { About } from './Views/About/About';
 import { e404 } from './Views/Erreur/e404';
-import {Route, Routes} from 'react-router-dom';
+import {Route, Routes, useLocation} from 'react-router-dom';
 import { Contact } from './Views/Contact/Contact';
 import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
 import { Gap } from './Views/component/Gap';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TempContext from './TempContext';
 
 function App() {
   const [temp, setTemp] = useState(localStorage.getItem("selectedItem"));
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <TempContext.Provider value={{ temp, setTemp }}>
     <div className="App" data-theme="dark">
