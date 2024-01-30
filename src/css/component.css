@@ -541,6 +541,8 @@ input:checked + .slider::after {
   margin-bottom: 20px;
   color: var(--primary-text-color);
   border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .SendEmailButton:hover{
