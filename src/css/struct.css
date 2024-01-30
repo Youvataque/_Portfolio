@@ -7,7 +7,6 @@
     margin-bottom: 0;
   }
   .homePresentationRow {
-    height: 290px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

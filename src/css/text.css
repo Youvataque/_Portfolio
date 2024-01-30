@@ -48,7 +48,7 @@
 }
 
 .HomeTextLength{
-    margin-top: 50px;
+    margin-top: -3%;
     opacity: 0;
     margin-left: 40px;
     width: 600px;
@@ -100,6 +100,7 @@
 /* Contact */
 .ContactTitle{
     color: var(--secondary-text-color);
+    margin: auto;
 }
 
 .ContactText{
@@ -124,6 +125,10 @@
     .AboutTextLength{
         margin-top: 0px;
         width: 730px;
+    }
+    .ContactTitle {
+        margin-top: 60px;
+        margin-bottom: 30px;
     }
   }
 
@@ -158,6 +163,7 @@
     .ContactText{
         width: 320px;
     }
+   
 }
 
 @media (max-width : 500px) {
@@ -166,5 +172,8 @@
     }
     .AboutTitle{
         margin: auto;
+    }
+    .ContactTitle {
+        width: 370px;
     }
 }
