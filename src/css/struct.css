@@ -25,7 +25,6 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: 3%;
   }
 
 /* About */
@@ -50,6 +49,10 @@
 }
 
 /* Contact Page */
+.Contact{
+  min-height: 80vh;
+}
+
 .ContactRow{
   display: flex;
   flex-direction: row;
@@ -105,7 +108,7 @@
 @media (max-width: 720px) {
   .GlobalHome{
     margin: auto;
-    width: 380px;
+    width: 370px;
   }
   .AboutName{
     font-size: 50px;
@@ -125,7 +128,6 @@
     width: 400px;
   }
   .HomeCards{
-    margin-right: 0;
   }
   .CenterContactL{
     margin-left: 10px;

@@ -9,7 +9,7 @@ export function Contact() {
         titles : ["Linkedin", "Github", "Youtube", "Twitter"],
         links : ["https://www.linkedin.com/in/yannis-seguin-540432161/", "https://github.com/Youvataque", "https://www.youtube.com/channel/UCQUgpvsakyzaLKko-a4lfBA", "https://twitter.com/SEGUIN_Yannis"]
     }
-    return <div>
+    return <div className='Contact'>
         <Gap size={100}/>
         <div className='ContactRow'>
             <ContactUs/>
@@ -18,7 +18,7 @@ export function Contact() {
                 <Gap size={-25}/>
                 <p className='ContactText'>I'm not a big social media user, but I will do my best to respond to you as quickly as possible. I can also be reached at <b>06 28 26 45 61</b></p>
                 <div className='CenterContactL'>
-                    <ContactLinks titles={socialContact.titles} links={socialContact.links}/>
+                    <ContactLinks titles={socialContact.titles} links={socialContact.links} wichBody={'ContactLinksBody2'}/>
                 </div>
             </div>
         </div>

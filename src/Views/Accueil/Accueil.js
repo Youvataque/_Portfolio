@@ -45,7 +45,7 @@ export function Accueil() {
                         <p className='homeName'>SEGUIN</p>
                     </div>
                 </motion.div>
-                <motion.img animate={{rotate: -360, opacity : [0, 1], y : [80, 0]}} transition={{duration: 0.4, delay: 1}} className='profilPicBig' src={profilPicBig}/>
+                <motion.img animate={{rotate: -360, opacity : [0, 0.999], y : [80, 0]}} transition={{duration: 0.4, delay: 1}} className='profilPicBig' src={profilPicBig}/>
             </div>
             <motion.div className='HomeTextLength' animate={{y :[70, -20], opacity : 1}} transition={{delay: 0.4}}>
                 <p className='homeTextPr'>
@@ -53,7 +53,7 @@ export function Accueil() {
                     &nbsp;Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure.
                 </p>
             </motion.div>
-            <ContactLinks titles={socialContact.titles} links={socialContact.links}/>
+            <ContactLinks titles={socialContact.titles} links={socialContact.links} wichBody={'ContactLinksBody1'}/>
             <Gap size={140}/>
         </div>
         <h1 className='HomeSecTitle'>Importants Projects</h1>

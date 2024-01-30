@@ -60,7 +60,7 @@
   .profilPicBig {
     height: 130px;
     width: 130px;
-    margin-top: 55px;
+    margin-top: 30px;
     object-fit: cover;
     border-radius: 150px;
     border: 3px solid var(--border-color);
