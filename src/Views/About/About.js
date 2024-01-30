@@ -34,7 +34,7 @@ export function About() {
             
             <Gap size={140}/>
         </div>
-        <h1 className='ProjectsSec'>My Personal Skills :</h1>
+        <h1 className='AboutTitle'>My Personal Skills:</h1>
         <SkillsGenerator/>
     </di>
 }
