@@ -28,10 +28,10 @@ export function Projects() {
         ]
     }
     return <div>
-        <h1 className='ProjectsSec'>Mobile Projects :</h1>
+        <h2 className='ProjectsSec'>Mobile Projects :</h2>
         <ProjectsCard texts={mobile.texts} titles={mobile.titles} links={mobile.links} skills={mobile.skills} marge='ProjectsCards'/>
         <Gap size={90}/>
-        <h1 className='ProjectsSec'>Web Projects :</h1>
+        <h2 className='ProjectsSec'>Web Projects :</h2>
         <ProjectsCard texts={web.texts} titles={web.titles} links={web.links} skills={web.skills} marge='ProjectsCards'/>
         <Gap size={90}/>
     </div>

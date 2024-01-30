@@ -100,7 +100,7 @@
 /* Contact */
 .ContactTitle{
     color: var(--secondary-text-color);
-    margin: auto;
+    margin-bottom: 60px;
 }
 
 .ContactText{
@@ -119,6 +119,9 @@
     }
 }
 @media (max-width: 1300px) {
+    .AboutTitle{
+        margin-left: 3%;
+    }
   }
 
 @media (max-width: 1000px) {
@@ -128,7 +131,6 @@
     }
     .ContactTitle {
         margin-top: 60px;
-        margin-bottom: 30px;
     }
   }
 
@@ -171,7 +173,7 @@
         width: 365px;
     }
     .AboutTitle{
-        margin: auto;
+        margin-top: -40px;
     }
     .ContactTitle {
         width: 370px;
