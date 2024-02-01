@@ -24,7 +24,7 @@ export function Projects() {
         texts : ["The portfolio is an essential requirement for every developer. Eager to showcase my skills and achievements, here is mine. It also serves as my first project in React !"],
         links : ["https://github.com/Youvataque/_Portfolio"],
         skills : [
-            [["React", "Github", "PixelMator"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]]
+            [["React", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]]
         ]
     }
     return <div>

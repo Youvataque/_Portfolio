@@ -562,7 +562,7 @@ input:checked + .slider::after {
 /* // zone du responsive */ 
 @media (max-width: 1600px) {
   .ProjectsCards{
-    margin-left: 10%;
+    margin-left: 7%;
   }
 }
 @media (max-width: 1200px) {
