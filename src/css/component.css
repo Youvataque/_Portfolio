@@ -118,6 +118,12 @@ input:checked + .slider::after {
   background-color: var(--element-howevered-color);
 }
 
+.HamburgerH2{
+  margin-top: 11px;
+  margin-right: 40px;
+  color: var(--secondary-text-color);
+}
+
 .BlurHamburgerContent{
   pointer-events: none;
   position: fixed;
@@ -218,7 +224,7 @@ input:checked + .slider::after {
   position: fixed;
   z-index: 101;
   transform: rotate(45deg);
-  margin-top: 12px;
+  margin-top: 11px;
   margin-bottom: 0;
 }
 
@@ -227,28 +233,25 @@ input:checked + .slider::after {
 }
 
 .HamburgerContentDirector{
-  margin-top: 60px;
-  margin-left: 55px;
-}
-.HamburgerNavItem {
-  width: 120px;
-  height: 40px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 
+
 .HamburgerNavLink {
-  width: 120px;
-  height: 40px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   text-decoration: none;
   font-size: 22px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
   font-weight: bold;
   color: var(--primary-text-color);
 }
 
-.HamburgerNavItem:hover > .HamburgerNavLink{
+.HamburgerNavLink:hover{
   color: var(--secondary-text-color);
   transition: 0.2s;
 

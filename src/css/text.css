@@ -58,17 +58,6 @@
     color: var(--primary-text-color);
 }
 
-/* Hamburger part */
-.HamburgerH1{
-    margin-top: 80px;
-    color: var(--secondary-text-color);
-}
-
-.HamburgerPoint{
-    color: var(--secondary-text-color);
-}
-/* fin hamburger part*/
-
 /* Projects part */
 .ProjectsSec{
     color: var(--primary-text-color);

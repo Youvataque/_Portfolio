@@ -15,8 +15,8 @@ export function Accueil() {
     const { temp } = useContext(TempContext);
     // contacts 
     const socialContact = {
-        titles : ["Linkedin", "Github", "Youtube", "Twitter"],
-        links : ["https://www.linkedin.com/in/yannis-seguin-540432161/", "https://github.com/Youvataque", "https://www.youtube.com/channel/UCQUgpvsakyzaLKko-a4lfBA", "https://twitter.com/SEGUIN_Yannis"]
+        titles : ["Linkedin", "Github", "Youtube", "Twitter", "Malt"],
+        links : ["https://www.linkedin.com/in/yannis-seguin-540432161/", "https://github.com/Youvataque", "https://www.youtube.com/channel/UCQUgpvsakyzaLKko-a4lfBA", "https://twitter.com/SEGUIN_Yannis", "https://www.malt.fr/profile/yannisseguin"]
     }
     // Projets 
     const importantProj = {
