@@ -6,7 +6,10 @@ import { Gap } from '../component/Gap';
 import profilPicBig from '../../img/profilPicBig.png'
 import {motion} from 'framer-motion';
 import { SkillsGenerator } from '../component/SkillsGenerator/SkillsGenerator';
+import { useContext } from 'react';
+import Context from '../../Context';
 export function About() {
+    const {lang} = useContext(Context);
     return <di>
         <div className='GlobalAbout'>
             <div className='AboutPresentationRow'>
@@ -15,8 +18,8 @@ export function About() {
                     <p className='AboutName'>SEGUIN</p>
                     <div className='AboutTextLength'>
                 <p className='AboutTextPr'>
-                    <b> Junior mobile developper.</b>
-                    &nbsp;I have been passionate about programming for years and started with Python in 2021. I programmed small viruses for 2 years,<br/> then switched to Swift in 2023 and to Flutter the same year. I particularly enjoyed this aspect of development, especially with the development of "Mon Gestionnaire" and "Montpellier Transport".<br/> Today, I continue with mobile development while also learning React for web.
+                    <b>{lang == "fr"? "Développeur mobile junior." : "Junior mobile developper."}</b>
+                    &nbsp;{lang == "fr"? "Passioné de programmation depuis des années, j'ai commancé avec python en 2021 en programmant de petit virus." : "I have been passionate about programming for years and started with Python in 2021. I programmed small viruses for 2 years,"}<br/>{lang == "fr"? "Je suis passé à Swift en 2023 puis à Flutter la même année. J'ai vraiment apprécié cet aspect du développement en particulié grace à \"Mon Gestionnaire\" et \"Montpellier Transport\"." : "then switched to Swift in 2023 and to Flutter the same year. I particularly enjoyed this aspect of development, especially with the development of \"Mon Gestionnaire\" and \"Montpellier Transport\"."}<br/>{lang == "fr"? "Aujourd'hui je continue le développement mobile tout en apprenant le web avec React." : "Today, I continue with mobile development while also learning React for web."}
                 </p>
             </div>
                 </div>
@@ -31,10 +34,9 @@ export function About() {
                     transition={{delay : 0.1}}
                     className='profilPicBigAbout' src={profilPicBig}/>
             </div>
-            
             <Gap size={140}/>
         </div>
-        <h1 className='AboutTitle'>My Personal Skills:</h1>
+        <h1 className='AboutTitle'>{lang == "fr"? "Mes compétences" : "My Personal Skills"}</h1>
         <SkillsGenerator/>
     </di>
 }

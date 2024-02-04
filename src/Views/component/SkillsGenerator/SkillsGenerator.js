@@ -1,4 +1,4 @@
-import TempContext from '../../../TempContext';
+import TempContext from '../../../Context';
 import React, { useContext } from 'react';
 import {delay, motion} from 'framer-motion';
 // dark

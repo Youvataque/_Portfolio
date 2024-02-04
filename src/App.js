@@ -14,17 +14,18 @@ import { Projects } from './Views/Projectss/Projects';
 import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
 import { Gap } from './Views/component/Gap';
 import React, { useState, useEffect } from 'react';
-import TempContext from './TempContext';
+import Context from './Context';
 
 function App() {
-  const [temp, setTemp] = useState(localStorage.getItem("selectedItem"));
+  const [theme, setTheme] = useState(localStorage.getItem("selectedItem"));
+  const [lang, setLang] = useState("en");
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
   return (
-    <TempContext.Provider value={{ temp, setTemp }}>
+    <Context.Provider value={{ theme, setTheme, lang, setLang }}>
     <div className="App" data-theme="dark">
       <header className="App-header">
         <div className='AppBar'>
@@ -54,7 +55,7 @@ function App() {
         <Gap size={20}/>
       </footer>
     </div>
-  </TempContext.Provider>
+  </Context.Provider>
 );
 }
 
