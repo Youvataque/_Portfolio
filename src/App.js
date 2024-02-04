@@ -15,15 +15,17 @@ import { ThemeSwitcher } from './Views/component/ThemeSwitch/ThemeSwitcher';
 import { Gap } from './Views/component/Gap';
 import React, { useState, useEffect } from 'react';
 import Context from './Context';
+import { LangSwitcher } from './Views/component/LangSwitch/LangSwitcher';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("selectedItem"));
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(localStorage.getItem("lang") != null? localStorage.getItem("lang") : "fr");
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
   return (
     <Context.Provider value={{ theme, setTheme, lang, setLang }}>
     <div className="App" data-theme="dark">
@@ -31,7 +33,8 @@ function App() {
         <div className='AppBar'>
           <div className='Leading'>
             <ThemeSwitcher />
-            <img className='profilPic' src={profilPic} />
+            <img className='profilPic' src={profilPic} draggable="false"/>
+            <LangSwitcher/>
           </div>
           <Hamburger/>
           <NavBar/>
@@ -47,7 +50,7 @@ function App() {
       <Gap size={120}/>
       <footer className='Footer'>
         <p className='CopyrightText'>
-          Designed and built by Yannis Seguin
+          {lang == "fr"? "Créé et designé par Yannis Seguin" : "Designed and built by Yannis Seguin"}
         </p>
         <p className='CopyrightText'>
           ©Copyright 2024 - Yannis Seguin

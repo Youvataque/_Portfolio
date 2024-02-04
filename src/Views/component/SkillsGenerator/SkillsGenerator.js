@@ -1,5 +1,5 @@
-import TempContext from '../../../Context';
-import React, { useContext } from 'react';
+import Context from '../../../Context';
+import { useContext } from 'react';
 import {delay, motion} from 'framer-motion';
 // dark
 import figmaD from '../../../svg/skills/Dark/figmaD.svg';
@@ -21,19 +21,26 @@ import sqlL from '../../../svg/skills/Light/sqlL.svg';
 import swiftL from '../../../svg/skills/Light/swiftL.svg';
 
 export function SkillsGenerator({}) {
-    const {temp} = useContext(TempContext);
-
+    const {theme} = useContext(Context);
+    const {lang} = useContext(Context);
     const mySkills = {
-        'Designing' : [["Figma", "Pixel Mator"],  temp == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
-        'Front-end' : [["Flutter", "SwiftUI", "React"], temp == 'dark'? [flutterD, swiftD, reactD] : [flutterL, swiftL, reactL]],
-        'DataBase' : [["Firebase", "Sql"], temp == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
-
+        'en' : {
+            'Designing' : [["Figma", "Pixel Mator"],  theme == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
+            'Front-end' : [["Flutter", "SwiftUI", "React"], theme == 'dark'? [flutterD, swiftD, reactD] : [flutterL, swiftL, reactL]],
+            'DataBase' : [["Firebase", "Sql"], theme == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
+    
+        },
+        'fr' : {
+            'Graphisme' : [["Figma", "Pixel Mator"],  theme == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
+            'Interface' : [["Flutter", "SwiftUI", "React"], theme == 'dark'? [flutterD, swiftD, reactD] : [flutterL, swiftL, reactL]],
+            'Données' : [["Firebase", "Sql"], theme == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
+        }
     }
     return <div className="SkillsGenBody">
-        {Object.keys(mySkills).map((section) => (
+        {Object.keys(mySkills[lang]).map((section) => (
             <div key={section} className="SkillsSecBody">
                 <h2 className="SkillsSec">{section}</h2>
-                {mySkills[section][0].map((skill, index) =>(
+                {mySkills[lang][section][0].map((skill, index) =>(
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -44,7 +51,7 @@ export function SkillsGenerator({}) {
                         }}
                         transition={{delay : (index + 1) / 6}}
                         className='SkillsPair'>
-                            <img  className='SkillsImg' key={index} src={mySkills[section][1][index]}/>
+                            <img  className='SkillsImg' key={index} src={mySkills[lang][section][1][index]} draggable="false"/>
                             <p className="Skill">{skill}</p>
                     </motion.div>
                 ))}

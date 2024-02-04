@@ -2,7 +2,11 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../../css/component.css'
 import { Gap } from './Gap';
+import { useContext } from 'react';
+import Context from '../../Context';
 export const ContactUs = () => {
+    const { lang } = useContext(Context);
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -53,11 +57,11 @@ export const ContactUs = () => {
 
   return (
     <form onSubmit={sendEmail} className='SendEmailBody'>
-        <h2 className='SendEmailFormTitle'>Send me a Message</h2>
+        <h2 className='SendEmailFormTitle'>{lang == "fr"? "Envoyez moi un message" : "Send me a Message"}</h2>
         <div className='Divider'/>
         <div className='SendEmailRow'> 
             <div className='SendEmailPair'>
-                <label className='SendEmailTitle'>Name</label>
+                <label className='SendEmailTitle'>{ lang == "fr"? "Nom" : "Name"}</label>
                 <Gap size={10}/>
                 <input className='SendEmailInput' type="text" name="user_name" value={name} onChange={(e) => setName(e.target.value)}/>
             </div>
@@ -74,7 +78,7 @@ export const ContactUs = () => {
             <textarea className='SendEmailTextArea' name="message" value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
         <div className='SendEmailEnd'>
-            <button className='SendEmailButton' type="submit" onClick={updateError}>Send Message</button>
+            <button className='SendEmailButton' type="submit" onClick={updateError}>{lang == "fr"? "Envoyer :)" : "Send Message"}</button>
             <p className='ErrorText'>{errorText}</p>
         </div>
     </form>

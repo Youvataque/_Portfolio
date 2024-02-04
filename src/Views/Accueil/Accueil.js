@@ -26,7 +26,7 @@ export function Accueil() {
                 [   
                     "Entreprise du batiment ? Vous en avez assez de gérer les fiches d'interventions ? De vous répéter constamment ? Commencez votre transition numérique dès maintenant Avec \"Mon Gestionnaire\" !",
                     "Vous en avez assez d'utiliser une application mal conçue au quotidien ? Vous souhaitez profiter d'une ergonomie et d'un design adaptés aux goûts actuels ? Choisissez Montpellier Transport ! Attention est en cours de développement !",
-                    "Le portfolio est essentiel pour tout développeur. Désireux de présenter mes réalisations et de mettre en avant mes compétences, voici le mien. Il sert également de premier projet en React !"                ]
+                    "Le portfolio est un essentiel pour tout développeur. Désireux de présenter mes réalisations et de mettre en avant mes compétences, voici le mien. Il sert également de premier projet en React !"                ]
             :    
                 [
                     "Construction company? Tired of managing intervention schedules? Of constantly repeating yourself? Start your digital transformation! With \"Mon Gestionnaire\" !",
@@ -45,14 +45,14 @@ export function Accueil() {
        <div className='GlobalHome'>
             <div className='homePresentationRow'>
                 <motion.div className='homePresentationStack'animate={{y :[140, 0], opacity : 1}} transition={{delay : 0.2}}>
-                    <motion.img animate={{x :[0, 150], y : [0, 20], rotate: [0, -45]}} transition={{x : {delay: 1.3, duration: 0.1}, y : {delay: 1.3, duration: 0.1}, rotate : {delay: 1.8}} } className='App-logo' src={theme == "dark"? darkBack : lightBack}/>
+                    <motion.img animate={{x :[0, 150], y : [0, 20], rotate: [0, -45]}} transition={{x : {delay: 1.3, duration: 0.1}, y : {delay: 1.3, duration: 0.1}, rotate : {delay: 1.8}} } className='App-logo' draggable="false" src={theme == "dark"? darkBack : lightBack}/>
                     <div className='homePresentation'> 
                         <p className='homeHello'>{lang == "fr"? "Bienvenue ! Je suis -" : "Hey there! I'm -"}</p>
                         <p className='homeName2'>Yannis</p>
                         <p className='homeName'>SEGUIN</p>
                     </div>
                 </motion.div>
-                <motion.img animate={{rotate: -360, opacity : [0, 0.999], y : [80, 0]}} transition={{duration: 0.4, delay: 1}} className='profilPicBig' src={profilPicBig}/>
+                <motion.img animate={{rotate: -360, opacity : [0, 0.999], y : [80, 0]}} transition={{duration: 0.4, delay: 1}} className='profilPicBig' src={profilPicBig}draggable="false"/>
             </div>
             <motion.div className='HomeTextLength' animate={{y :[70, -20], opacity : 1}} transition={{delay: 0.4}}>
                 <p className='homeTextPr'>

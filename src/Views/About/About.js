@@ -32,7 +32,9 @@ export function About() {
                         hidden: { opacity: 0 }
                     }}
                     transition={{delay : 0.1}}
-                    className='profilPicBigAbout' src={profilPicBig}/>
+                    className='profilPicBigAbout' src={profilPicBig}
+                    draggable="false"
+                />
             </div>
             <Gap size={140}/>
         </div>

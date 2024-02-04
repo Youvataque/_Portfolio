@@ -20,7 +20,7 @@ export function Hamburger() {
                 <Link className='HamburgerNavLink' to='/' onClick={change}>{lang == "fr"? "Accueil" : "Home"}</Link>
                 <Link className='HamburgerNavLink' to='/projects' onClick={change}>{lang == "fr"? "Projets" : "Projects"}</Link>
                 <Link className='HamburgerNavLink' to='/about' onClick={change}>{lang == "fr"? "À propos" : "About"}</Link>
-                <Link className='HamburgerNavLink' to='/contact' onClick={change}>{lang == "fr"? "Contacte" : "Contact"}</Link>
+                <Link className='HamburgerNavLink' to='/contact' onClick={change}>{lang == "fr"? "Contact" : "Contact"}</Link>
             </div>
             <div className={`HamburgerStack ${open ? "open" : ""}`}>
                 <button type="button" className="hamburger" onClick={change}></button>

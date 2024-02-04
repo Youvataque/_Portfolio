@@ -33,7 +33,7 @@ export function Projects() {
     const web = {
         titles : ["_Portfolio"],
         texts : lang == "fr"?
-                ["Le portfolio est essentiel pour tout développeur. Désireux de présenter mes réalisations et de mettre en avant mes compétences, voici le mien. Il sert également de premier projet en React !"]
+                ["Le portfolio est un essentiel pour tout développeur. Désireux de présenter mes réalisations et de mettre en avant mes compétences, voici le mien. Il sert également de premier projet en React !"]
             :
                 ["The portfolio is an essential requirement for every developer. Eager to showcase my skills and achievements, here is mine. It also serves as my first project in React !"],
         links : ["https://github.com/Youvataque/_Portfolio"],

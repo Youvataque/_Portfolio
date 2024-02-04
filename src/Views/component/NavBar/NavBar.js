@@ -9,7 +9,7 @@ export function NavBar() {
           <Link className='nav-link' to='/'>{lang == "fr"? "Accueil" : "Home"}</Link>
           <Link className='nav-link' to='/projects'>{lang == "fr"? "Projets" : "Projects"}</Link>
           <Link className='nav-link' to='/about'>{lang == "fr"? "À propos" : "About"}</Link>
-          <Link className='nav-link' to='/contact'>{lang == "fr"? "Contacte" : "Contact"}</Link>
+          <Link className='nav-link' to='/contact'>{lang == "fr"? "Contact" : "Contact"}</Link>
     </nav>
   </div>
   
