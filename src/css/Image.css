@@ -1,3 +1,12 @@
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* accueil Image*/
 .App-logo {
     margin-left: -70px;
@@ -15,6 +24,11 @@
     object-fit: cover;
     border-radius: 150px;
     border: 3px solid var(--border-color);
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 0.3s; /* Durée de l'animation */
+    animation-delay: 1s; /* Délai avant le début de l'animation */
+    animation-fill-mode: forwards; 
   }
 
   .profilPicBigAbout {
@@ -24,6 +38,11 @@
     object-fit: cover;
     border-radius: 150px;
     border: 3px solid var(--border-color);
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 0.3s; /* Durée de l'animation */
+    animation-delay: 0.5s; 
+    animation-fill-mode: forwards; 
   }
 
 @media (max-width: 1300px) {
@@ -46,6 +65,7 @@
     margin-top: 40px;
   }
   .profilPicBigAbout {
+    visibility: hidden;
     position: absolute;
     top: 165px;
     right: 10%;
@@ -54,6 +74,7 @@
     object-fit: cover;
     border-radius: 150px;
     border: 3px solid var(--border-color);
+
   }
 }
 

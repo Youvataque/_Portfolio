@@ -28,8 +28,7 @@ export function About() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={{
-                        visible: { opacity: 1, x : [2000, 0]},
-                        hidden: { opacity: 0 }
+                        visible: {x : [2000, 0]},
                     }}
                     transition={{delay : 0.1}}
                     className='profilPicBigAbout' src={profilPicBig}

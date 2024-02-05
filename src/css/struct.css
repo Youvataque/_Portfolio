@@ -1,6 +1,19 @@
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Accueil */
   .homePresentationStack {
     opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 0.3s; /* Durée de l'animation */
+    animation-delay: 0.5s; /* Délai avant le début de l'animation */
+    animation-fill-mode: forwards; 
     position: relative;
     height: 300px;
     margin-top: 20px;
