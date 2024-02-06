@@ -58,6 +58,7 @@ export function SkillsGenerator({}) {
             'Données' : [["Firebase", "Sql"], theme == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
         }
     }
+    
     // create modulable skills panel
     return <div className="SkillsGenBody">
         {Object.keys(mySkills[lang]).map((section) => (

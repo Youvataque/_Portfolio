@@ -6,6 +6,7 @@ import '../../../css/text.css';
 import { useContext } from "react";
 import Context from "../../../Context";
 
+// create an hamburger button for mobile navigation
 export function Hamburger() {
     const {lang} = useContext(Context);
     const [open, setOpen] = useState(false);

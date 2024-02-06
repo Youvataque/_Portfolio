@@ -1,6 +1,7 @@
 import '../../../css/component.css';
 import {motion} from 'framer-motion';
 
+// Create modulable contact button
 export function ContactLinks({titles, links, wichBody}) {
     return <div className='ContactsLinksBodyDirector'>
         <div className={wichBody}>
