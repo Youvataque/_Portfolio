@@ -5,17 +5,20 @@ import { Gap } from './Gap';
 import { useContext } from 'react';
 import Context from '../../Context';
 export const ContactUs = () => {
-    const { lang } = useContext(Context);
+    const { lang } = useContext(Context); // var wich control en / fr
 
+    // textField var 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errorText, setErrorText] = useState('');
 
+    // statut updater
     const updateError = () => {
         setErrorText('Sending email...');
     }
 
+    // sender func
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -55,32 +58,33 @@ export const ContactUs = () => {
             });
     };
 
-  return (
-    <form onSubmit={sendEmail} className='SendEmailBody'>
-        <h2 className='SendEmailFormTitle'>{lang == "fr"? "Envoyez moi un message" : "Send me a Message"}</h2>
-        <div className='Divider'/>
-        <div className='SendEmailRow'> 
-            <div className='SendEmailPair'>
-                <label className='SendEmailTitle'>{ lang == "fr"? "Nom" : "Name"}</label>
-                <Gap size={10}/>
-                <input className='SendEmailInput' type="text" name="user_name" value={name} onChange={(e) => setName(e.target.value)}/>
+    // main Code
+    return (
+        <form onSubmit={sendEmail} className='SendEmailBody'>
+            <h2 className='SendEmailFormTitle'>{lang == "fr"? "Envoyez moi un message" : "Send me a Message"}</h2>
+            <div className='Divider'/>
+            <div className='SendEmailRow'> 
+                <div className='SendEmailPair'>
+                    <label className='SendEmailTitle'>{ lang == "fr"? "Nom" : "Name"}</label>
+                    <Gap size={10}/>
+                    <input className='SendEmailInput' type="text" name="user_name" value={name} onChange={(e) => setName(e.target.value)}/>
+                </div>
+                <div className='SendSpace'/>
+                <div className='SendEmailPair'>
+                    <label className='SendEmailTitle'>Email</label>
+                    <Gap size={10}/>
+                    <input className='SendEmailInput' type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                </div>
             </div>
-            <div className='SendSpace'/>
-            <div className='SendEmailPair'>
-                <label className='SendEmailTitle'>Email</label>
+            <div className='SendEmailPairA'> 
+                <label className='SendEmailTitleA'>Message</label>
                 <Gap size={10}/>
-                <input className='SendEmailInput' type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <textarea className='SendEmailTextArea' name="message" value={message} onChange={(e) => setMessage(e.target.value)}/>
             </div>
-        </div>
-        <div className='SendEmailPairA'> 
-            <label className='SendEmailTitleA'>Message</label>
-            <Gap size={10}/>
-            <textarea className='SendEmailTextArea' name="message" value={message} onChange={(e) => setMessage(e.target.value)}/>
-        </div>
-        <div className='SendEmailEnd'>
-            <button className='SendEmailButton' type="submit" onClick={updateError}>{lang == "fr"? "Envoyer :)" : "Send Message"}</button>
-            <p className='ErrorText'>{errorText}</p>
-        </div>
-    </form>
-  );
+            <div className='SendEmailEnd'>
+                <button className='SendEmailButton' type="submit" onClick={updateError}>{lang == "fr"? "Envoyer :)" : "Send Message"}</button>
+                <p className='ErrorText'>{errorText}</p>
+            </div>
+        </form>
+    );
 };

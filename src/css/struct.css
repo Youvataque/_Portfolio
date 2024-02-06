@@ -1,3 +1,6 @@
+/* ////////////////////////////////////////////////// */
+/* // animation */ 
+
 @keyframes fadeOut {
   from {
     opacity: 0;
@@ -16,16 +19,8 @@
   }
 }
 
-@keyframes HTextLAn {
-  from {
-    transform: translateY(70px);
-  }
-  to {
-    transform: translateY(-20px);
-  }
-}
-
-/* Accueil */
+/* ////////////////////////////////////////////////// */
+/* // Accueil */ 
   .homePresentationStack {
     opacity: 0;
     animation-name: fadeOut, HStackAn;
@@ -57,7 +52,8 @@
     flex-wrap: wrap;
   }
 
-/* About */
+/* ////////////////////////////////////////////////// */
+/* // About */ 
 .GlobalAbout{
   margin: auto;
   width: 1300px;
@@ -78,7 +74,8 @@
   text-align: start;
 }
 
-/* Contact Page */
+/* ////////////////////////////////////////////////// */
+/* // Contact */ 
 .Contact{
   min-height: 80vh;
 }
@@ -101,9 +98,10 @@
 .CenterContactL{
   margin-right: 4%;
 }
-/* fin Contact page */
 
-/* Responsive */
+
+/* ////////////////////////////////////////////////// */
+/* // Responsive */ 
 @media (max-width: 1300px) {
   .GlobalHome{
     margin: auto;
@@ -156,8 +154,6 @@
   }
   .ContactColumn{
     width: 400px;
-  }
-  .HomeCards{
   }
   .CenterContactL{
     margin-left: 10px;

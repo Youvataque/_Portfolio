@@ -18,6 +18,7 @@ export function Accueil() {
         titles : ["Linkedin", "Github", "Youtube", "Twitter", "Malt"],
         links : ["https://www.linkedin.com/in/yannis-seguin-540432161/", "https://github.com/Youvataque", "https://www.youtube.com/channel/UCQUgpvsakyzaLKko-a4lfBA", "https://twitter.com/SEGUIN_Yannis", "https://www.malt.fr/profile/yannisseguin"]
     }
+
     // Projets 
     const importantProj = {
         titles : ["Mon Gestionnaire", "Montpellier Transport", "_Portfolio"],
@@ -39,34 +40,34 @@ export function Accueil() {
             [["React", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]]
         ]
     }
-    //skills
+    // Main code
     return <div>
        <div className='GlobalHome'>
             <div className='homePresentationRow'>
                 <div className='homePresentationStack'>
-                    <img className='App-logo' draggable="false" src={theme == "dark"? darkBack : lightBack}/>
-                    <div className='homePresentation'> 
+                    <img className='App-logo' draggable="false" src={theme == "dark"? darkBack : lightBack}/> {/* Flutter logo */}
+                    <div className='homePresentation'> {/* basic informations */}
                         <p className='homeHello'>{lang == "fr"? "Bienvenue ! Je suis -" : "Hey there! I'm -"}</p>
                         <p className='homeName2'>Yannis</p>
                         <p className='homeName'>SEGUIN</p>
                     </div>
                 </div>
-                <img className='profilPicBig' src={profilPicBig}draggable="false"/>
+                <img className='profilPicBig' src={profilPicBig}draggable="false"/> {/* me */}
             </div>
-            <div className='HomeTextLength'>
+            <div className='HomeTextLength'> {/* litle presentation */}
                 <p className='homeTextPr'>
                     <b>{lang == "fr"? "Developpeur mobile Junior." : "Junior mobile developper."}</b>
                     &nbsp;{lang == "fr"?  "Passionné d'informatique, lorsque je commence à travailler, rien ne peut m'arrêter ! Apprendre est, pour moi, un plaisir sans fin." : "Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure."}
                 </p>
             </div>
-            <ContactLinks titles={socialContact.titles} links={socialContact.links} wichBody={'ContactLinksBody1'}/>
-            <Gap size={140}/>
+            <ContactLinks titles={socialContact.titles} links={socialContact.links} wichBody={'ContactLinksBody1'}/> {/* Call ContactGenerator component */}
+            <Gap size={140}/> {/* Call mySpacer component */}
         </div>
         <h1 className='HomeSecTitle'>{lang == "fr"? "Projets importants" : "Importants Projects"}</h1>
-        <ProjectsCard texts={importantProj.texts} titles={importantProj.titles} links={importantProj.links} skills={importantProj.skills} marge={'HomeCards'}/>
-        <Gap size={140}/>
+        <ProjectsCard texts={importantProj.texts} titles={importantProj.titles} links={importantProj.links} skills={importantProj.skills} marge={'HomeCards'}/> {/* Call ProjetctsCardGenerator component */}
+        <Gap size={140}/> {/* Call mySpacer component */}
         <h1 className='HomeSecTitle'>{lang == "fr"? "Mes compétences" : "My Personal Skills"}</h1>
-        <SkillsGenerator/>
-        <Gap size={90}/>
+        <SkillsGenerator/> {/* Call skillsGenerator component */}
+        <Gap size={90}/> {/* Call mySpacer component */}
     </div>
 }

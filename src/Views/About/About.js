@@ -8,7 +8,7 @@ import { SkillsGenerator } from '../component/SkillsGenerator/SkillsGenerator';
 import { useContext } from 'react';
 import Context from '../../Context';
 export function About() {
-    const {lang} = useContext(Context);
+    const {lang} = useContext(Context); {/* Global var wich control fr / en */}
     return <di>
         <div className='GlobalAbout'>
             <div className='AboutPresentationRow'>
@@ -27,6 +27,6 @@ export function About() {
             <Gap size={140}/>
         </div>
         <h1 className='AboutTitle'>{lang == "fr"? "Mes compétences" : "My Personal Skills"}</h1>
-        <SkillsGenerator/>
+        <SkillsGenerator/>  {/* Call skillGenerator component */}
     </di>
 }

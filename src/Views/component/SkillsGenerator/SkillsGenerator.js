@@ -20,9 +20,11 @@ import sqlL from '../../../svg/skills/Light/sqlL.svg';
 import swiftL from '../../../svg/skills/Light/swiftL.svg';
 
 export function SkillsGenerator({}) {
-    const {theme} = useContext(Context);
-    const {lang} = useContext(Context);
 
+    const {theme} = useContext(Context); // global var wich control theme
+    const {lang} = useContext(Context); // global var wich control en / fr
+
+    // listen viewPort aparition and add animation to css class at this moment
     useEffect(() => {
         const elements = document.querySelectorAll('.SkillsPair');
         const observer = new IntersectionObserver(
@@ -41,7 +43,8 @@ export function SkillsGenerator({}) {
     
         return () => observer.disconnect();
       });
-      
+    
+    // my skills to generate
     const mySkills = {
         'en' : {
             'Designing' : [["Figma", "Pixel Mator"],  theme == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
@@ -55,6 +58,7 @@ export function SkillsGenerator({}) {
             'Données' : [["Firebase", "Sql"], theme == 'dark'? [firebaseD, sqlD] : [firebaseL, sqlL]]
         }
     }
+    // create modulable skills panel
     return <div className="SkillsGenBody">
         {Object.keys(mySkills[lang]).map((section) => (
             <div key={section} className="SkillsSecBody">

@@ -1,6 +1,8 @@
 import {SkillsLinks} from '../SkillsLinks/SkillsLinks';
 import { useEffect } from 'react';
 export function ProjectsCard({texts, titles, links, skills,  marge}) {
+
+    // listen viewPort aparition and add animation to css class at this moment
     useEffect(() => {
         const elements = document.querySelectorAll('.Card');
         const observer = new IntersectionObserver(
@@ -19,6 +21,8 @@ export function ProjectsCard({texts, titles, links, skills,  marge}) {
         
         return () => observer.disconnect();
     });
+
+    // create modulable projects cards
     return <div>
         <div className={marge}>
             {titles.map((title, index) => (
@@ -27,7 +31,7 @@ export function ProjectsCard({texts, titles, links, skills,  marge}) {
                         <h3 className="ProjectsCardTitle">{title}</h3>
                         <p className="ProjetcsCardText">{texts[index]}</p>
                         <div className='Space'/>
-                        <SkillsLinks className="CardSkills" links={skills[index][1]} titles={skills[index][0]}/>
+                        <SkillsLinks className="CardSkills" links={skills[index][1]} titles={skills[index][0]}/> {/* Call SkillsLinkGenerator for create skills redirection */}
                     </div>
                 </a>
             ))}

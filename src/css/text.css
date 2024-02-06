@@ -1,3 +1,5 @@
+/* ////////////////////////////////////////////////// */
+/* // Animation */ 
 @keyframes fadeOut {
     from {
       opacity: 0;
@@ -16,13 +18,8 @@
     }
   }
 
-.monText{
-    font-size: 17px;
-    font-weight: bold;
-    color: var(--primary-text-color);
-}
-
-/* Accueil specific text */
+/* ////////////////////////////////////////////////// */
+/* // Home */ 
 .homePresentation {
     position: absolute;
     left: 15%;
@@ -80,15 +77,16 @@
     color: var(--primary-text-color);
 }
 
-/* Projects part */
+/* ////////////////////////////////////////////////// */
+/* // Projects */ 
 .ProjectsSec{
     color: var(--primary-text-color);
     margin-left: 18%;
     text-align: start;
 }
-/* fin projetcs part */
 
-/* About  */
+/* ////////////////////////////////////////////////// */
+/* // About */ 
 .AboutTextLength{
     margin-top: 0px;
     width: 900px;
@@ -106,9 +104,9 @@
     margin-left: 18%;
     text-align: start;
 }
-/* fin about */ 
 
-/* Contact */
+/* ////////////////////////////////////////////////// */
+/* // About */ 
 .ContactTitle{
     color: var(--secondary-text-color);
     margin-bottom: 60px;
@@ -120,7 +118,9 @@
     width: 500px;
 
 }
-/* fin Contact */
+
+/* ////////////////////////////////////////////////// */
+/* // Responsive */ 
 @media (max-width : 1600px) {
     .ProjectsSec{
         margin-left: 7%;

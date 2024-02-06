@@ -1,5 +1,6 @@
 import '../../../css/component.css';
 
+// create modulable links for a skill
 export function SkillsLinks({titles, links}) {
     return <div className='SkillsLinksBodyDirector'>
     <ul className='SkillsLinksBody'>

@@ -5,7 +5,8 @@ import { Gap } from '../component/Gap';
 import { useContext } from 'react';
 import Context from '../../Context';
 export function Projects() {
-    const {lang} = useContext(Context);
+    const {lang} = useContext(Context); // var wich control en / fr
+
     // projets mobile
     const mobile = {
         titles : ["Mon Gestionnaire", "Montpellier Transport", "CoockLeen"],
@@ -29,6 +30,7 @@ export function Projects() {
             [["Flutter", "Firebase", "Github", "PixelMator"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]],
         ]
     }
+
     // projets web
     const web = {
         titles : ["_Portfolio"],
@@ -41,12 +43,13 @@ export function Projects() {
             [["React", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]]
         ]
     }
+    // main code
     return <div>
         <h2 className='ProjectsSec'>{lang == "fr"? "Projets mobiles :" : "Mobile Projects :"}</h2>
-        <ProjectsCard texts={mobile.texts} titles={mobile.titles} links={mobile.links} skills={mobile.skills} marge='ProjectsCards'/>
-        <Gap size={90}/>
+        <ProjectsCard texts={mobile.texts} titles={mobile.titles} links={mobile.links} skills={mobile.skills} marge='ProjectsCards'/> {/* Call ProjectsCardGenerator component */}
+        <Gap size={90}/> {/* Call mySpacer component */}
         <h2 className='ProjectsSec'>{lang == "fr"? "Projets Web :" : "Web Projects :"}</h2>
-        <ProjectsCard texts={web.texts} titles={web.titles} links={web.links} skills={web.skills} marge='ProjectsCards'/>
-        <Gap size={90}/>
+        <ProjectsCard texts={web.texts} titles={web.titles} links={web.links} skills={web.skills} marge='ProjectsCards'/> {/* Call ProjectsCardGenerator component */}
+        <Gap size={90}/> {/* Call mySpacer component */}
     </div>
 }

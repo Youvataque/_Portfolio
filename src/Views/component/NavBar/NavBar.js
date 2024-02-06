@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import '../../../css/component.css';
 import { useContext } from 'react';
 import Context from '../../../Context';
+
+// create navBar for largeScreen navigation
 export function NavBar() {
   const {lang} = useContext(Context);
   return <div className='navbar'>

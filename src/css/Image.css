@@ -1,3 +1,6 @@
+/* ////////////////////////////////////////////////// */
+/* // Animation */ 
+
 @keyframes fadeOut {
   from {
     opacity: 0;
@@ -34,7 +37,8 @@
   }
 }
 
-/* accueil Image*/
+/* ////////////////////////////////////////////////// */
+/* // Image Accueil */ 
 .App-logo {
     margin-left: -70px;
     margin-top: -100px;
@@ -42,8 +46,8 @@
     height: 190px;
     opacity: 0.3 ;
     animation-name: AppLogoAn1;
-    animation-duration: 1.5s; /* Durée de l'animation */
-    animation-delay: 1.8s; /* Délai avant le début de l'animation */
+    animation-duration: 1.5s;
+    animation-delay: 1.8s; 
     animation-fill-mode: forwards;
     transform-origin: center; 
   }
@@ -57,12 +61,14 @@
     border: 3px solid var(--border-color);
     opacity: 0;
     animation-name: fadeOut, slidePicture;
-    animation-duration: 0.3s; /* Durée de l'animation */
-    animation-delay: 1.5s; /* Délai avant le début de l'animation */
+    animation-duration: 0.3s; 
+    animation-delay: 1.5s; 
     animation-fill-mode: forwards;
     transform-origin: center; 
   }
 
+/* ////////////////////////////////////////////////// */
+/* // Image About */ 
   .profilPicBigAbout {
     margin-bottom: 110px;
     height: 300px;
@@ -72,11 +78,13 @@
     border: 3px solid var(--border-color);
     opacity: 0;
     animation-name: fadeOut, slidePicture;
-    animation-duration: 0.3s; /* Durée de l'animation */
+    animation-duration: 0.3s; 
     animation-delay: 0.5s; 
     animation-fill-mode: forwards; 
   }
 
+/* ////////////////////////////////////////////////// */
+/* // Responsive */ 
 @media (max-width: 1300px) {
     .profilPicBigAbout {
       position: absolute;
@@ -145,4 +153,3 @@
     border: 3px solid var(--border-color);
   }
 }
-/* fin accueil Image */
