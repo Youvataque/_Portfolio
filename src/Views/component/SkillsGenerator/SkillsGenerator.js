@@ -1,6 +1,5 @@
 import Context from '../../../Context';
-import { useContext } from 'react';
-import {delay, motion} from 'framer-motion';
+import { useContext, useEffect } from 'react';
 // dark
 import figmaD from '../../../svg/skills/Dark/figmaD.svg';
 import pixelMatorD from '../../../svg/skills/Dark/pixelmatorD.svg';
@@ -23,6 +22,26 @@ import swiftL from '../../../svg/skills/Light/swiftL.svg';
 export function SkillsGenerator({}) {
     const {theme} = useContext(Context);
     const {lang} = useContext(Context);
+
+    useEffect(() => {
+        const elements = document.querySelectorAll('.SkillsPair');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting && !entry.target.classList.contains('SkillsOnScreen')) {
+                entry.target.classList.add('SkillsOnScreen');
+              } 
+            });
+          }
+        );
+    
+        elements.forEach(element => {
+          observer.observe(element);
+        });
+    
+        return () => observer.disconnect();
+      });
+      
     const mySkills = {
         'en' : {
             'Designing' : [["Figma", "Pixel Mator"],  theme == 'dark'? [figmaD, pixelMatorD] : [figmaL, pixelMatorL]],
@@ -41,19 +60,10 @@ export function SkillsGenerator({}) {
             <div key={section} className="SkillsSecBody">
                 <h2 className="SkillsSec">{section}</h2>
                 {mySkills[lang][section][0].map((skill, index) =>(
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={{
-                        visible: { opacity: 1 },
-                        hidden: { opacity: 0 }
-                        }}
-                        transition={{delay : (index + 1) / 6}}
-                        className='SkillsPair'>
+                    <div className='SkillsPair' style={{animationDelay: `${(index + 1) / 6}s`}}>
                             <img  className='SkillsImg' key={index} src={mySkills[lang][section][1][index]} draggable="false"/>
                             <p className="Skill">{skill}</p>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         ))}

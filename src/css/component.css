@@ -373,6 +373,7 @@ input:checked + .slider::after {
 
 .Card{
   display: block;
+  opacity: 0;
   text-decoration: none;
   background-color: var(--element-background-color);
   border: 1px solid var(--border-color);
@@ -413,6 +414,13 @@ input:checked + .slider::after {
   margin-right: 20px;
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+.ProjectsOnScreen{
+  animation-name: fadeOut;
+  animation-duration: 0.3s; /* Durée de l'animation */
+  animation-delay: 0.5s; /* Délai avant le début de l'animation */
+  animation-fill-mode: forwards;                
 }
 
 /* ////////////////////////////////////////////////// */
@@ -458,6 +466,18 @@ input:checked + .slider::after {
   display: flex;
   flex-direction: row;
   align-items: center;
+  opacity: 0;
+}
+
+.SkillsOnScreen{
+  animation-name: fadeOut;
+  animation-duration: 0.3s; /* Durée de l'animation */
+  animation-delay: 0.5s; /* Délai avant le début de l'animation */
+  animation-fill-mode: forwards;                
+}
+
+.SkillsPair:not(.SkillsOnScreen):after {
+  opacity: 1;
 }
 
 /* ////////////////////////////////////////////////// */

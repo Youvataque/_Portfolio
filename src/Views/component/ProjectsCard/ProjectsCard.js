@@ -1,28 +1,35 @@
 import {SkillsLinks} from '../SkillsLinks/SkillsLinks';
-import {motion} from 'framer-motion';
-import { Gap } from '../Gap';
+import { useEffect } from 'react';
 export function ProjectsCard({texts, titles, links, skills,  marge}) {
+    useEffect(() => {
+        const elements = document.querySelectorAll('.Card');
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('SkillsOnScreen')) {
+                        entry.target.classList.add('SkillsOnScreen');
+                    } 
+                });
+            }
+        );
+    
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        return () => observer.disconnect();
+    });
     return <div>
         <div className={marge}>
             {titles.map((title, index) => (
-                <motion.a
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={{
-                        visible: { opacity: 1 },
-                        hidden: { opacity: 0 }
-                    }}
-                    transition={{delay : (index + 1) / 5}}
-                    target="_blank" href={links[index]}
-                    key={index} className="Card">
-                        <div>
-                            <h3 className="ProjectsCardTitle">{title}</h3>
-                            <p className="ProjetcsCardText">{texts[index]}</p>
-                            <div className='Space'/>
-                            <SkillsLinks className="CardSkills" links={skills[index][1]} titles={skills[index][0]}/>
-                        </div>
-                </motion.a>
+                <a target="_blank" href={links[index]} style={{animationDelay : `${(index + 1) / 5}s`}} key={index} className="Card">
+                    <div>
+                        <h3 className="ProjectsCardTitle">{title}</h3>
+                        <p className="ProjetcsCardText">{texts[index]}</p>
+                        <div className='Space'/>
+                        <SkillsLinks className="CardSkills" links={skills[index][1]} titles={skills[index][0]}/>
+                    </div>
+                </a>
             ))}
         </div>
     </div>
