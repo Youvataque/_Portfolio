@@ -7,12 +7,30 @@
   }
 }
 
+@keyframes HStackAn {
+  from {
+    transform: translateY(140px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes HTextLAn {
+  from {
+    transform: translateY(70px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
 /* Accueil */
   .homePresentationStack {
     opacity: 0;
-    animation-name: fadeOut;
+    animation-name: fadeOut, HStackAn;
     animation-duration: 0.3s; /* Durée de l'animation */
-    animation-delay: 0.5s; /* Délai avant le début de l'animation */
+    animation-delay: 0.5s, 0.5s; /* Délai avant le début de l'animation */
     animation-fill-mode: forwards; 
     position: relative;
     height: 300px;

@@ -7,6 +7,14 @@
     }
   }
 
+  @keyframes HTextLAn {
+    from {
+      transform: translateY(70px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
 
 .monText{
     font-size: 17px;
@@ -58,10 +66,10 @@
 }
 
 .HomeTextLength{
-    animation-name: fadeOut;
+    animation-name: fadeOut, HTextLAn;
     opacity: 0;
-    animation-duration: 0.3s; /* Durée de l'animation */
-    animation-delay: 1s; /* Délai avant le début de l'animation */
+    animation-duration: 0.3s, 0.3s; /* Durée de l'animation */
+    animation-delay: 0.8s, 0.8s; /* Délai avant le début de l'animation */
     animation-fill-mode: forwards; 
     margin-top: -3%;
     margin-left: 40px;

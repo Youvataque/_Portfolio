@@ -6,7 +6,6 @@ import '../../css/struct.css';
 import '../../css/Image.css';
 import React, { useContext } from 'react';
 import Context from '../../Context';
-import {motion} from 'framer-motion';
 import { ContactLinks } from '../component/ContactLinks/ContactLinks';
 import { ProjectsCard } from '../component/ProjectsCard/ProjectsCard';
 import { SkillsGenerator } from '../component/SkillsGenerator/SkillsGenerator';
@@ -44,22 +43,22 @@ export function Accueil() {
     return <div>
        <div className='GlobalHome'>
             <div className='homePresentationRow'>
-                <motion.div className='homePresentationStack'animate={{y :[140, 0],}} transition={{delay : 0.2}}>
-                    <motion.img animate={{x :[0, 150], y : [0, 20], rotate: [0, -45]}} transition={{x : {delay: 1.3, duration: 0.1}, y : {delay: 1.3, duration: 0.1}, rotate : {delay: 1.8}} } className='App-logo' draggable="false" src={theme == "dark"? darkBack : lightBack}/>
+                <div className='homePresentationStack'>
+                    <img className='App-logo' draggable="false" src={theme == "dark"? darkBack : lightBack}/>
                     <div className='homePresentation'> 
                         <p className='homeHello'>{lang == "fr"? "Bienvenue ! Je suis -" : "Hey there! I'm -"}</p>
                         <p className='homeName2'>Yannis</p>
                         <p className='homeName'>SEGUIN</p>
                     </div>
-                </motion.div>
-                <motion.img animate={{rotate: -360, y : [80, 0]}} transition={{duration: 0.4, delay: 1}} className='profilPicBig' src={profilPicBig}draggable="false"/>
+                </div>
+                <img className='profilPicBig' src={profilPicBig}draggable="false"/>
             </div>
-            <motion.div className='HomeTextLength' animate={{y :[70, -20]}} transition={{delay: 0.4}}>
+            <div className='HomeTextLength'>
                 <p className='homeTextPr'>
                     <b>{lang == "fr"? "Developpeur mobile Junior." : "Junior mobile developper."}</b>
                     &nbsp;{lang == "fr"?  "Passionné d'informatique, lorsque je commence à travailler, rien ne peut m'arrêter ! Apprendre est, pour moi, un plaisir sans fin." : "Passionate about programming, once I start working, nothing can stop me! Learning is, for me, the greatest pleasure."}
                 </p>
-            </motion.div>
+            </div>
             <ContactLinks titles={socialContact.titles} links={socialContact.links} wichBody={'ContactLinksBody1'}/>
             <Gap size={140}/>
         </div>

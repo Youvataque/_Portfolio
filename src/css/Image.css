@@ -7,6 +7,33 @@
   }
 }
 
+@keyframes slidePicture {
+  from {
+    transform: translateY(120px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes AppLogoAn1 {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  20% {
+    transform: translateY(20px) translateX(150px) rotate(0deg);
+  }
+  60% {
+    transform: translateY(20px) translateX(150px) rotate(0deg);
+  }
+  80% {
+    transform: translateY(20px) translateX(150px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(20px) translateX(150px) rotate(-45deg);
+  }
+}
+
 /* accueil Image*/
 .App-logo {
     margin-left: -70px;
@@ -14,7 +41,11 @@
     rotate: 45deg;
     height: 190px;
     opacity: 0.3 ;
-    
+    animation-name: AppLogoAn1;
+    animation-duration: 1.5s; /* Durée de l'animation */
+    animation-delay: 1.8s; /* Délai avant le début de l'animation */
+    animation-fill-mode: forwards;
+    transform-origin: center; 
   }
   .profilPicBig {
     margin-top: 50px;
@@ -25,10 +56,11 @@
     border-radius: 150px;
     border: 3px solid var(--border-color);
     opacity: 0;
-    animation-name: fadeOut;
+    animation-name: fadeOut, slidePicture;
     animation-duration: 0.3s; /* Durée de l'animation */
-    animation-delay: 1s; /* Délai avant le début de l'animation */
-    animation-fill-mode: forwards; 
+    animation-delay: 1.5s; /* Délai avant le début de l'animation */
+    animation-fill-mode: forwards;
+    transform-origin: center; 
   }
 
   .profilPicBigAbout {
@@ -39,7 +71,7 @@
     border-radius: 150px;
     border: 3px solid var(--border-color);
     opacity: 0;
-    animation-name: fadeOut;
+    animation-name: fadeOut, slidePicture;
     animation-duration: 0.3s; /* Durée de l'animation */
     animation-delay: 0.5s; 
     animation-fill-mode: forwards; 
@@ -65,7 +97,6 @@
     margin-top: 40px;
   }
   .profilPicBigAbout {
-    visibility: hidden;
     position: absolute;
     top: 165px;
     right: 10%;
