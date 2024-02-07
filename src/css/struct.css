@@ -66,13 +66,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.AboutName{
-  color: var(--secondary-text-color);
-  font-weight: bold;
-  font-size: 80px;
-  margin: 0;
-  text-align: start;
-}
+
 
 /* ////////////////////////////////////////////////// */
 /* // Contact */ 

@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Garamond :700|Garamond :400');
 @import url('css/theme.css');
 
+
 * {
   font-family: 'Lexend';
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Lexend';
-  font-weight: 700;
 }
 
 code {

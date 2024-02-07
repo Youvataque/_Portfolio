@@ -23,7 +23,7 @@
   0% {
     transform: translateY(0px) translateX(0px) rotate(0deg);
   }
-  20% {
+  30% {
     transform: translateY(20px) translateX(150px) rotate(0deg);
   }
   60% {
@@ -46,7 +46,7 @@
     height: 190px;
     opacity: 0.3 ;
     animation-name: AppLogoAn1;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-delay: 1.8s; 
     animation-fill-mode: forwards;
     transform-origin: center; 

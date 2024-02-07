@@ -9,12 +9,12 @@ import { useContext } from 'react';
 import Context from '../../Context';
 export function About() {
     const {lang} = useContext(Context); {/* Global var wich control fr / en */}
-    return <di>
+    return <div>
         <div className='GlobalAbout'>
             <div className='AboutPresentationRow'>
                 <div className='AboutPresentation'> 
                     <p className='AboutName'>Yannis</p>
-                    <p className='AboutName'>SEGUIN</p>
+                    <p className='AboutName2'>SEGUIN</p>
                     <div className='AboutTextLength'>
                         <p className='AboutTextPr'>
                             <b>{lang == "fr"? "Développeur mobile junior." : "Junior mobile developper."}</b>
@@ -28,5 +28,5 @@ export function About() {
         </div>
         <h1 className='AboutTitle'>{lang == "fr"? "Mes compétences" : "My Personal Skills"}</h1>
         <SkillsGenerator/>  {/* Call skillGenerator component */}
-    </di>
+    </div>
 }

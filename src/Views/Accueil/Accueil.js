@@ -21,7 +21,7 @@ export function Accueil() {
 
     // Projets 
     const importantProj = {
-        titles : ["Mon Gestionnaire", "Montpellier Transport", "_Portfolio"],
+        titles : ["Mon Gestionnaire", "Montpellier Transports", "_Portfolio"],
         texts : lang == "fr"?
                 [   
                     "Entreprise du batiment ? Vous en avez assez de gérer les fiches d'interventions ? De vous répéter constamment ? Commencez votre transition numérique dès maintenant Avec \"Mon Gestionnaire\" !",

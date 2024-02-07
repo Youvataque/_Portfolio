@@ -9,7 +9,7 @@ export function Projects() {
 
     // projets mobile
     const mobile = {
-        titles : ["Mon Gestionnaire", "Montpellier Transport", "CoockLeen"],
+        titles : ["Mon Gestionnaire", "Montpellier Transports", "CoockLeen"],
         texts : lang == "fr"?
                 [   
                     "Entreprise du batiment ? Vous en avez assez de gérer les fiches d'interventions ? De vous répéter constamment ? Commencez votre transition numérique dès maintenant Avec \"Mon Gestionnaire\" !",

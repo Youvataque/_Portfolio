@@ -105,8 +105,28 @@
     text-align: start;
 }
 
+.AboutName{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    margin-left: -1%;
+    font-size: 100px;
+    color: var(--secondary-text-color);
+}
+
+.AboutName2{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    font-size: 100px;
+    color: var(--secondary-text-color);
+}
+
+
 /* ////////////////////////////////////////////////// */
-/* // About */ 
+/* // Contact */ 
 .ContactTitle{
     color: var(--secondary-text-color);
     margin-bottom: 60px;
