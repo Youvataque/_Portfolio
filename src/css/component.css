@@ -390,10 +390,10 @@ input:checked + .slider::after {
 .Card:hover{
   pointer-events:auto;
   background-color:  var(--element-howevered-color);
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .ProjectsCardTitle{
