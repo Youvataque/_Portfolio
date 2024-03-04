@@ -3,7 +3,7 @@ import '../../css/text.css';
 import '../../css/struct.css';
 import '../../css/Image.css';
 import { Gap } from '../component/Gap';
-import profilPicBig from '../../img/profilPicBig.png'
+import profilPicBig from '../../img/profilPic.png'
 import { SkillsGenerator } from '../component/SkillsGenerator/SkillsGenerator';
 import { useContext } from 'react';
 import Context from '../../Context';

@@ -1,6 +1,6 @@
 import darkBack from '../../svg/FlutterDark.svg';
 import lightBack from '../../svg/FlutterLight.svg';
-import profilPicBig from '../../img/profilPicBig.png'
+import profilPicBig from '../../img/profilPic.png'
 import '../../css/text.css';
 import '../../css/struct.css';
 import '../../css/Image.css';
