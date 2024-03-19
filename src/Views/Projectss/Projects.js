@@ -9,21 +9,21 @@ export function Projects() {
 
     // projets mobile
     const mobile = {
-        titles : ["Mon Gestionnaire", "Montpellier Transports", "CoockLeen"],
+        titles : ["BatiConnect", "Montpellier Transports", "CoockLeen"],
         texts : lang == "fr"?
                 [   
-                    "Entreprise du batiment ? Vous en avez assez de gérer les fiches d'interventions ? De vous répéter constamment ? Commencez votre transition numérique dès maintenant Avec \"Mon Gestionnaire\" !",
+                    "Entreprise du batiment ? Vous souhaitez passer au numérique ? Avec BatiConnect entamez votre transition ! Gérez vos entretiens, vos chantiers ainsi que vos devis avec une simplicité encore inégalé.",
                     "Vous en avez assez d'utiliser une application mal conçue au quotidien ? Vous souhaitez profiter d'une ergonomie et d'un design adaptés aux goûts actuels ? Choisissez Montpellier Transport ! Attention est en cours de développement !",
                     "Vous cherchez une application de cuisine collaborative ? L'esprit familial vous tient à cœur ? CookLeen est LA solution ! Cette application est un premier projet inachevé."
                 ]
             :    
                 
                 [
-                    "Construction company? Tired of managing intervention schedules? Of constantly repeating yourself? Start your digital transformation! With \"Mon Gestionnaire\" !",
+                    "Construction company? Are you looking to go digital? Start your transition with BatiConnect! Manage your maintenance, projects, and quotes with unmatched simplicity.",
                     "Are you tired of using a poorly designed application on a daily basis? Do you want to enjoy ergonomics and a design that suits today's tastes? Choose Montpellier Transport !",
                     "Looking for a collaborative cooking app? Is the family spirit important to you? CookLeen is THE solution! This application is an unfinished initial project."
                 ],
-        links : ["https://github.com/Youvataque/gestionnaire-interventions" , "https://www.tam-voyages.com/index.asp", "https://github.com/Youvataque/Coockleen-Flutter"],
+        links : ["https://www.youtube.com/watch?v=GpcRevrvhY8" , "https://AppNonCommercialisé.com", "https://github.com/Youvataque/Coockleen-Flutter"],
         skills : [
             [["Flutter", "Firebase", "Github", "Figma", "PixelMator"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com", , "https://www.figma.com/fr/", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]],
             [["Flutter", "Firebase", "Github"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com"]],
@@ -43,6 +43,7 @@ export function Projects() {
             [["React", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]]
         ]
     }
+
     // main code
     return <div>
         <h2 className='ProjectsSec'>{lang == "fr"? "Projets mobiles :" : "Mobile Projects :"}</h2>

@@ -163,6 +163,9 @@
     .ContactTitle {
         margin-top: 60px;
     }
+    .homeTextPr{
+        padding-top: 15px;
+    }
   }
 
 @media (max-width: 720px) {
