@@ -33,14 +33,21 @@ export function Projects() {
 
     // projets web
     const web = {
-        titles : ["_Portfolio"],
+        titles : ["_Portfolio", "SolsEnergiesBains"],
         texts : lang == "fr"?
-                ["Le portfolio est un essentiel pour tout développeur. Désireux de présenter mes réalisations et de mettre en avant mes compétences, voici le mien. Il sert également de premier projet en React !"]
+                [
+                    "Le portfolio est un essentiel pour tout développeur. Désireux de présenter mes réalisations et de mettre en avant mes compétences, voici le mien. Il sert également de premier projet en React !",
+                    "SolsÉnergiesBains est aujourd'hui équipé d'un site internet sur mesure, piloté par une application mobile. Cela leur permet d'avoir toujours un site internet à la page, sans coûts mensuels."
+                ]
             :
-                ["The portfolio is an essential requirement for every developer. Eager to showcase my skills and achievements, here is mine. It also serves as my first project in React !"],
-        links : ["https://github.com/Youvataque/_Portfolio"],
+                [
+                    "The portfolio is an essential requirement for every developer. Eager to showcase my skills and achievements, here is mine. It also serves as my first project in React !",
+                    "SolsÉnergiesBains is now equipped with a custom website managed through a mobile app. This allows for an always up-to-date website without monthly costs."
+                ],
+        links : ["https://github.com/Youvataque/_Portfolio", "https://solsenergiesbains.fr/"],
         skills : [
-            [["React", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]]
+            [["React", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]],
+            [["React","TailWind","TypeScript", "Github", "PixelMator" ,"Firebase"], ["https://fr.legacy.reactjs.org/", "https://tailwindcss.com/", "https://www.typescriptlang.org/", "https://github.com", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12", "https://firebase.google.com"]]
         ]
     }
 
