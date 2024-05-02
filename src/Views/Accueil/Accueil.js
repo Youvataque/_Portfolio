@@ -33,7 +33,7 @@ export function Accueil() {
                     "Are you tired of using a poorly designed application on a daily basis? Do you want to enjoy ergonomics and a design that suits today's tastes? Choose Montpellier Transport ! This app is in development!",
                     "SolsÉnergiesBains is now equipped with a custom website managed through a mobile app. This allows for an always up-to-date website without monthly costs."
                 ],
-        links : ["https://www.youtube.com/watch?v=GpcRevrvhY8" , "https://AppNonCommercialisé.com", "https://solsenergiesbains.fr/"],
+        links : ["https://www.youtube.com/watch?v=GpcRevrvhY8" , "https://AppNonCommercialisé.com", "https://www.solsenergiesbains.com/"],
         skills : [
             [["Flutter", "Firebase", "Github", "Figma", "PixelMator"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com", , "https://www.figma.com/fr/", "https://apps.apple.com/fr/app/pixelmator-pro/id1289583905?mt=12"]],
             [["Flutter", "Firebase", "Github"], ["https://flutter.dev", "https://firebase.google.com", "https://github.com"]],
