@@ -21,15 +21,15 @@ export function Accueil() {
 
     // Projets 
     const importantProj = {
-        titles : ["BatiConnect", "Montpellier Transports", "SolsEnergiesBains"],
+        titles : ["NewBat", "Montpellier Transports", "SolsEnergiesBains"],
         texts : lang == "fr"?
                 [   
-                    "Entreprise du batiment ? Vous souhaitez passer au numérique ? Avec BatiConnect entamez votre transition ! Gérez vos entretiens, vos chantiers ainsi que vos devis avec une simplicité encore inégalé.",
+                    "Entreprise du batiment ? Vous souhaitez passer au numérique ? Avec NewBat entamez votre transition ! Gérez vos entretiens, vos chantiers ainsi que vos devis avec une simplicité encore inégalé.",
                     "Vous en avez assez d'utiliser une application mal conçue au quotidien ? Vous souhaitez profiter d'une ergonomie et d'un design adaptés aux goûts actuels ? Choisissez Montpellier Transport ! Attention est en cours de développement !",
                     "SolsÉnergiesBains est aujourd'hui équipé d'un site internet sur mesure, piloté par une application mobile. Cela leur permet d'avoir toujours un site internet à la page, sans coûts mensuels."                ]
             :    
                 [
-                    "Construction company? Are you looking to go digital? Start your transition with BatiConnect! Manage your maintenance, projects, and quotes with unmatched simplicity.",
+                    "Construction company? Are you looking to go digital? Start your transition with NewBat ! Manage your maintenance, projects, and quotes with unmatched simplicity.",
                     "Are you tired of using a poorly designed application on a daily basis? Do you want to enjoy ergonomics and a design that suits today's tastes? Choose Montpellier Transport ! This app is in development!",
                     "SolsÉnergiesBains is now equipped with a custom website managed through a mobile app. This allows for an always up-to-date website without monthly costs."
                 ],
